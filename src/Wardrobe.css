@@ -53,6 +53,35 @@
   background-color: #B64242;
 }
 
+.changeGender {
+  background-color: #E54B4B;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+  top: calc(100% - 64px*2.2 - 20px);
+  left: calc(100% - 64*3.65px - 20px);
+}
+
+.changeStyle {
+  background-color: #E54B4B;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+  top: calc(100% - 64px - 20px);
+  left: calc(100% - 64*3.65px - 20px);
+}
+
+
 .btnIcons {
   display: block;
   margin: auto;
