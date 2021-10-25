@@ -26,6 +26,7 @@ class Wardrobe extends React.Component {
     this.changeGender = this.changeGender.bind(this);
     this.changeStyle = this.changeStyle.bind(this);
     this.incrementTrait = this.incrementTrait.bind(this);
+    this.decrementTrait = this.decrementTrait.bind(this);
   }
 
   componentDidMount() {
@@ -39,13 +40,9 @@ class Wardrobe extends React.Component {
     const traits = libmoji.randTraits(libmoji.getTraits(gender[0], style[0]));
     const outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
     const link = libmoji.buildPreviewUrl(pose, 3, gender[1], style[1], 0, traits, outfit);
-    this.setState({ traits: traits});
+    this.setState({ trait: traits});
+    this.setState({ outfit: outfit})
     this.setState({ previewLink: link });
-
-    //console.log(traits.length)
-    //for (var i = 0; i < traits.length; i++) {
-     // console.log(i, traits[i][0])
-    //}
   }
 
   changeGender() {
@@ -55,7 +52,6 @@ class Wardrobe extends React.Component {
     else {
       this.setState({ gender: libmoji.genders[0] });
     }
-    console.log(this.state.gender)
     this.shuffle()
   }
 
@@ -75,18 +71,12 @@ class Wardrobe extends React.Component {
 
   incrementTrait() {
     const gender = this.state.gender[0]
-    console.log(gender)
     const style = this.state.style[0]
     const traitIndex = 0
     let currTraits = this.state.trait
     const traitValues = libmoji.getValues(libmoji.getTraits(gender, style)[traitIndex])
 
-    console.log(currTraits)
-    console.log(traitValues)
-
     let currTraitValueIndex = 0
-    //console.log("looking for: ", currTraits[traitIndex][1])
-
     for (var i=0; i < traitValues.length; i++) {
       if (traitValues[i]['value'] === currTraits[traitIndex][1]) {
         currTraitValueIndex = i
@@ -94,25 +84,43 @@ class Wardrobe extends React.Component {
       }
     }
 
+    if (currTraitValueIndex + 1 >= traitValues.length) {
+      return;
+    }
+
     const newTraitValue = traitValues[currTraitValueIndex + 1]['value']
-    //console.log(currTraitValueIndex)
-    //console.log(traitValues[currTraitValueIndex + 1]['value'])
-    //console.log(newTraitValue)
-
     currTraits[traitIndex][1] = newTraitValue
-
-    //console.log(currTraits)
-
     this.setState({ trait: currTraits});
 
-    //const outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
-    //const link = libmoji.buildPreviewUrl(pose, 3, gender[1], style[1], 0, traits, outfit);
+    const link = libmoji.buildPreviewUrl(this.state.pose, 3, this.state.gender[1], this.state.style[1], 0, this.state.trait, this.state.outfit);
+    this.setState({ previewLink: link });
+  }
+
+  decrementTrait() {
+    const gender = this.state.gender[0]
+    const style = this.state.style[0]
+    const traitIndex = 0
+    let currTraits = this.state.trait
+    const traitValues = libmoji.getValues(libmoji.getTraits(gender, style)[traitIndex])
+
+    let currTraitValueIndex = 0
+    for (var i=0; i < traitValues.length; i++) {
+      if (traitValues[i]['value'] === currTraits[traitIndex][1]) {
+        currTraitValueIndex = i
+        break
+      }
+    }
+
+    if (currTraitValueIndex - 1 < 0) {
+      return;
+    }
+
+    const newTraitValue = traitValues[currTraitValueIndex - 1]['value']
+    currTraits[traitIndex][1] = newTraitValue
+    this.setState({ trait: currTraits});
 
     const link = libmoji.buildPreviewUrl(this.state.pose, 3, this.state.gender[1], this.state.style[1], 0, this.state.trait, this.state.outfit);
-    console.log(currTraits)
-    console.log(link)
     this.setState({ previewLink: link });
-
   }
 
   render() {
@@ -134,6 +142,9 @@ class Wardrobe extends React.Component {
           </button>
           <button className="incrementTrait" onClick={this.incrementTrait}>
             <img className="btnIcons" src={rightButton} alt="incrementTrait" />
+          </button>
+          <button className="decrementTrait" onClick={this.decrementTrait}>
+            <img className="btnIcons" src={rightButton} alt="decrementTrait" />
           </button>
 
         </div>
