@@ -18,13 +18,14 @@ class Wardrobe extends React.Component {
       gender: libmoji.genders[0],
       pose: libmoji.poses[2],
       style: libmoji.styles[0],
-      traits: libmoji.randTraits(libmoji.getTraits(libmoji.genders[0][0], libmoji.styles[0][0])),
-      // traits: libmoji.getTraits(this.state.gender[0], this.state.style[0]),
+      trait: libmoji.randTraits(libmoji.getTraits(libmoji.genders[0][0], libmoji.styles[0][0])),
+      outfit: libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(libmoji.genders[0][0])))),
       previewLink: undefined
     };
     this.shuffle = this.shuffle.bind(this);
     this.changeGender = this.changeGender.bind(this);
     this.changeStyle = this.changeStyle.bind(this);
+    this.incrementTrait = this.incrementTrait.bind(this);
   }
 
   componentDidMount() {
@@ -38,12 +39,13 @@ class Wardrobe extends React.Component {
     const traits = libmoji.randTraits(libmoji.getTraits(gender[0], style[0]));
     const outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
     const link = libmoji.buildPreviewUrl(pose, 3, gender[1], style[1], 0, traits, outfit);
+    this.setState({ traits: traits});
     this.setState({ previewLink: link });
 
-    console.log(traits.length)
-    for (var i = 0; i < traits.length; i++) {
-      console.log(traits[i][0])
-    }
+    //console.log(traits.length)
+    //for (var i = 0; i < traits.length; i++) {
+     // console.log(i, traits[i][0])
+    //}
   }
 
   changeGender() {
@@ -69,6 +71,47 @@ class Wardrobe extends React.Component {
     }
     console.log(this.state.style)
     this.shuffle()
+  }
+
+  incrementTrait() {
+    const gender = this.state.gender[0]
+    console.log(gender)
+    const style = this.state.style[0]
+    const traitIndex = 0
+    let currTraits = this.state.trait
+    const traitValues = libmoji.getValues(libmoji.getTraits(gender, style)[traitIndex])
+
+    console.log(currTraits)
+    console.log(traitValues)
+
+    let currTraitValueIndex = 0
+    //console.log("looking for: ", currTraits[traitIndex][1])
+
+    for (var i=0; i < traitValues.length; i++) {
+      if (traitValues[i]['value'] === currTraits[traitIndex][1]) {
+        currTraitValueIndex = i
+        break
+      }
+    }
+
+    const newTraitValue = traitValues[currTraitValueIndex + 1]['value']
+    //console.log(currTraitValueIndex)
+    //console.log(traitValues[currTraitValueIndex + 1]['value'])
+    //console.log(newTraitValue)
+
+    currTraits[traitIndex][1] = newTraitValue
+
+    //console.log(currTraits)
+
+    this.setState({ trait: currTraits});
+
+    //const outfit = libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(gender[0]))));
+    //const link = libmoji.buildPreviewUrl(pose, 3, gender[1], style[1], 0, traits, outfit);
+
+    const link = libmoji.buildPreviewUrl(this.state.pose, 3, this.state.gender[1], this.state.style[1], 0, this.state.trait, this.state.outfit);
+    console.log(currTraits)
+    console.log(link)
+    this.setState({ previewLink: link });
 
   }
 
@@ -88,6 +131,9 @@ class Wardrobe extends React.Component {
           </button>
           <button className="changeStyle" onClick={this.changeStyle}>
             <img className="btnIcons" src={rightButton} alt="changeStyle" />
+          </button>
+          <button className="incrementTrait" onClick={this.incrementTrait}>
+            <img className="btnIcons" src={rightButton} alt="incrementTrait" />
           </button>
 
         </div>
