@@ -109,6 +109,34 @@
   left: calc(100% - 64*3.65px - 20px);
 }
 
+.incrementOutfit {
+  background-color: #e54b98;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+  top: calc(100% - 64px*6 - 20px);
+  left: calc(100% - 64*3.65px - 20px);
+}
+
+.decrementOutfit {
+  background-color: #4bd3e5;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  z-index: 10;
+  position: absolute;
+  top: calc(100% - 64px*7 - 20px);
+  left: calc(100% - 64*3.65px - 20px);
+}
+
 .btnIcons {
   display: block;
   margin: auto;

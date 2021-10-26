@@ -19,7 +19,9 @@ class Wardrobe extends React.Component {
       pose: libmoji.poses[2],
       style: libmoji.styles[0],
       trait: libmoji.randTraits(libmoji.getTraits(libmoji.genders[0][0], libmoji.styles[0][0])),
-      outfit: libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(libmoji.genders[0][0])))),
+      brand: libmoji.getBrands(libmoji.genders[0][0]),
+      outfit: libmoji.getOutfits(libmoji.getBrands(libmoji.genders[0][0])),
+      //outfit: libmoji.randOutfit(libmoji.getOutfits(libmoji.randBrand(libmoji.getBrands(libmoji.genders[0][0])))),
       previewLink: undefined
     };
     this.shuffle = this.shuffle.bind(this);
@@ -27,6 +29,8 @@ class Wardrobe extends React.Component {
     this.changeStyle = this.changeStyle.bind(this);
     this.incrementTrait = this.incrementTrait.bind(this);
     this.decrementTrait = this.decrementTrait.bind(this);
+    this.incrementOutfit = this.incrementOutfit.bind(this);
+    this.decrementOutfit = this.decrementOutfit.bind(this);
   }
 
   componentDidMount() {
@@ -123,6 +127,21 @@ class Wardrobe extends React.Component {
     this.setState({ previewLink: link });
   }
 
+  incrementOutfit() {
+    const newOutfit = this.state.outfit + 1
+    this.setState({ outfit: newOutfit})
+    const link = libmoji.buildPreviewUrl(this.state.pose, 3, this.state.gender[1], this.state.style[1], 0, this.state.trait, this.state.outfit);
+    this.setState({ previewLink: link });
+  }
+
+  decrementOutfit() {
+    const newOutfit = this.state.outfit - 1
+    this.setState({ outfit: newOutfit})
+    const link = libmoji.buildPreviewUrl(this.state.pose, 3, this.state.gender[1], this.state.style[1], 0, this.state.trait, this.state.outfit);
+    this.setState({ previewLink: link });
+
+  }
+
   render() {
     return (
       <div className="Wardrobe">
@@ -145,6 +164,12 @@ class Wardrobe extends React.Component {
           </button>
           <button className="decrementTrait" onClick={this.decrementTrait}>
             <img className="btnIcons" src={rightButton} alt="decrementTrait" />
+          </button>
+          <button className="incrementOutfit" onClick={this.incrementOutfit}>
+            <img className="btnIcons" src={rightButton} alt="incrementOutfit" />
+          </button>
+          <button className="decrementOutfit" onClick={this.decrementOutfit}>
+            <img className="btnIcons" src={rightButton} alt="decrementOutfit" />
           </button>
 
         </div>
