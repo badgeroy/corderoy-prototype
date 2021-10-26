@@ -1,6 +1,5 @@
 import './App.css';
 import Wardrobe from "./Wardrobe";
-import Login from "./containers/Login";
 
 function App() {
   return (
