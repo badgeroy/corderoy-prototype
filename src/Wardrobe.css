@@ -1,143 +1,89 @@
-.preview {
-  background-color: lightgray;
-  width: 50vw;
-  height: 90vh;
-  border-radius: 15px;
+.Wardrobe {
   display: flex;
-  justify-content: center;
-  overflow: visible;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.preview-window {
+  background-color: lightgray;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 85vh;
+  max-height: 85vh;
+  border-radius: 20px;
   position: relative;
 }
 
-.preview img {
-  object-fit: contain;
+.preview-bitmoji {
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
-.preview button:hover {
+.preview-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 0.8em;
+  max-width: 204px;
+}
+
+.preview-sidebar-item-title {
+  text-align: left;
+}
+
+.preview-sidebar-item-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn {
+  flex: 25%;
+  width: 5vw;
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0 0);
   cursor: pointer;
 }
 
-.gender {
-  background-color: #929292;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px - 64px - 40px);
-  left: calc(100% - 64px - 20px);
+.btn:active {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 0 0);
 }
 
-.gender:active {
-  background-color: #707070;
+.btn img {
+  position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.shuffler {
-  background-color: #E54B4B;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px - 20px);
-  left: calc(100% - 64px - 20px);
+.male-btn {
+  background-color: #5FD8FF;
 }
 
-.shuffler:active {
-  background-color: #B64242;
+.female-btn {
+  background-color: #FF8383;
 }
 
-.changeGender {
-  background-color: #E54B4B;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px*2.2 - 20px);
-  left: calc(100% - 64*3.65px - 20px);
+.prev-btn, .next-btn {
+  background-color: #FFEE59;
 }
 
-.changeStyle {
-  background-color: #E54B4B;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px - 20px);
-  left: calc(100% - 64*3.65px - 20px);
+.style-btn {
+  background-color: #65FF90;
 }
 
-.incrementTrait {
-  background-color: #4bdbe5;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px*3.5 - 20px);
-  left: calc(100% - 64*3.65px - 20px);
-}
-
-.decrementTrait {
-  background-color: #b7e54b;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px*4.7 - 20px);
-  left: calc(100% - 64*3.65px - 20px);
-}
-
-.incrementOutfit {
-  background-color: #e54b98;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px*6 - 20px);
-  left: calc(100% - 64*3.65px - 20px);
-}
-
-.decrementOutfit {
-  background-color: #4bd3e5;
-  border: none;
-  color: white;
-  text-align: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  z-index: 10;
-  position: absolute;
-  top: calc(100% - 64px*7 - 20px);
-  left: calc(100% - 64*3.65px - 20px);
-}
-
-.btnIcons {
-  display: block;
-  margin: auto;
+.style-btn {
+  flex: 100%;
 }

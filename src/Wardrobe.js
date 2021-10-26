@@ -1,14 +1,13 @@
 import libmoji from 'libmoji';
 import './Wardrobe.css';
 import React from "react";
-import genderIcon from './gender-icon.svg';
-import shuffleIcon from './shuffle-icon.svg';
-import rightButton from './right-button.png';
+import {Button} from "reactstrap";
+import leftArrow from "./left-arrow-icon.svg";
+import rightArrow from "./right-arrow-icon.svg";
 import { FacebookShareButton, FacebookIcon } from "react-share";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 import { RedditShareButton, RedditIcon } from "react-share";
 import { WhatsappShareButton, WhatsappIcon } from "react-share";
-
 
 
 class Wardrobe extends React.Component {
@@ -26,6 +25,8 @@ class Wardrobe extends React.Component {
     };
     this.shuffle = this.shuffle.bind(this);
     this.changeGender = this.changeGender.bind(this);
+    this.changeToMale = this.changeToMale.bind(this);
+    this.changeToFemale = this.changeToFemale.bind(this);
     this.changeStyle = this.changeStyle.bind(this);
     this.incrementTrait = this.incrementTrait.bind(this);
     this.decrementTrait = this.decrementTrait.bind(this);
@@ -57,6 +58,16 @@ class Wardrobe extends React.Component {
       this.setState({ gender: libmoji.genders[0] });
     }
     this.shuffle()
+  }
+
+  changeToMale() {
+    this.setState({gender: libmoji.genders[0]});
+    this.shuffle();
+  }
+
+  changeToFemale() {
+    this.setState({gender: libmoji.genders[1]});
+    this.shuffle();
   }
 
   changeStyle() {
@@ -145,73 +156,82 @@ class Wardrobe extends React.Component {
   render() {
     return (
       <div className="Wardrobe">
-        <div className="preview">
-          <img className="renderer" src={this.state.previewLink} alt="bitmoji" />
-          <button className="gender" onClick={this.gender}>
-            <img className="btnIcons" src={genderIcon} alt="Gender" />
-          </button>
-          <button className="shuffler" onClick={this.shuffle}>
-            <img className="btnIcons" src={shuffleIcon} alt="Shuffle" />
-          </button>
-          <button className="changeGender" onClick={this.changeGender}>
-            <img className="btnIcons" src={rightButton} alt="changeGender" />
-          </button>
-          <button className="changeStyle" onClick={this.changeStyle}>
-            <img className="btnIcons" src={rightButton} alt="changeStyle" />
-          </button>
-          <button className="incrementTrait" onClick={this.incrementTrait}>
-            <img className="btnIcons" src={rightButton} alt="incrementTrait" />
-          </button>
-          <button className="decrementTrait" onClick={this.decrementTrait}>
-            <img className="btnIcons" src={rightButton} alt="decrementTrait" />
-          </button>
-          <button className="incrementOutfit" onClick={this.incrementOutfit}>
-            <img className="btnIcons" src={rightButton} alt="incrementOutfit" />
-          </button>
-          <button className="decrementOutfit" onClick={this.decrementOutfit}>
-            <img className="btnIcons" src={rightButton} alt="decrementOutfit" />
-          </button>
-
+        <div className="preview-window">
+          <img className="preview-bitmoji" src={this.state.previewLink} alt="bitmoji" />
         </div>
+        <div className="preview-sidebar">
+          <div className="preview-sidebar-item" id="gender">
+            <div className="preview-sidebar-item-title">Gender</div>
+            <hr className="preview-sidebar-item-divider"/>
+            <div className="preview-sidebar-item-buttons">
+              <Button variant="primary" onClick={this.changeToMale} className="btn male-btn">Male</Button>
+              <Button variant="primary" onClick={this.changeToFemale} className="btn female-btn">Female</Button>
+            </div>
+          </div>
+          <div className="preview-sidebar-item" id="traits">
+            <div className="preview-sidebar-item-title">Traits</div>
+            <hr className="preview-sidebar-item-divider"/>
+            <div className="preview-sidebar-item-buttons">
+              <Button variant="primary" onClick={this.incrementTrait} className="btn prev-btn">
+                <img src={leftArrow} alt="prev"/>
+              </Button>
+              <Button variant="primary" onClick={this.decrementTrait} className="btn next-btn">
+                <img src={rightArrow} alt="next"/>
+              </Button>
+            </div>
+          </div>
+          <div className="preview-sidebar-item" id="outfits">
+            <div className="preview-sidebar-item-title">Outfits</div>
+            <hr className="preview-sidebar-item-divider"/>
+            <div className="preview-sidebar-item-buttons">
+              <Button variant="primary" onClick={this.changeStyle} className="btn style-btn">Style</Button>
+              <Button variant="primary" onClick={this.incrementOutfit} className="btn prev-btn">
+                <img src={leftArrow} alt="prev"/>
+              </Button>
+              <Button variant="primary" onClick={this.decrementOutfit} className="btn next-btn">
+                <img src={rightArrow} alt="next"/>
+              </Button>
+            </div>
+          </div>
+          <div className="preview-sidebar-item" id="share">
+            <div className="preview-sidebar-item-title">Share</div>
+            <hr className="preview-sidebar-item-divider"/>
+            <div className="preview-sidebar-item-buttons">
+              <FacebookShareButton
+                  url={"http://www.camperstribe.com"}
+                  quote={"CampersTribe - World is yours to explore"}
+                  hashtag="#camperstribe"
+              >
+                <FacebookIcon size={36} />
+              </FacebookShareButton>
 
-        <div className="shareButtons">
-          <FacebookShareButton
-            url={"http://www.camperstribe.com"}
-            quote={"CampersTribe - World is yours to explore"}
-            hashtag="#camperstribe"
-          >
-            <FacebookIcon size={36} />
-          </FacebookShareButton>
+              <TwitterShareButton
+                  url={"http://www.camperstribe.com"}
+                  quote={"CampersTribe - World is yours to explore"}
+                  hashtag="#camperstribe"
+              >
+                <TwitterIcon size={36} />
+              </TwitterShareButton>
 
-          <TwitterShareButton
-            url={"http://www.camperstribe.com"}
-            quote={"CampersTribe - World is yours to explore"}
-            hashtag="#camperstribe"
-          >
-            <TwitterIcon size={36} />
-          </TwitterShareButton>
+              <RedditShareButton
+                  url={"http://www.camperstribe.com"}
+                  quote={"CampersTribe - World is yours to explore"}
+                  hashtag="#camperstribe"
+              >
+                <RedditIcon size={36} />
+              </RedditShareButton>
 
-          <RedditShareButton
-            url={"http://www.camperstribe.com"}
-            quote={"CampersTribe - World is yours to explore"}
-            hashtag="#camperstribe"
-          >
-            <RedditIcon size={36} />
-          </RedditShareButton>
-
-          <WhatsappShareButton
-            url={"http://www.camperstribe.com"}
-            quote={"CampersTribe - World is yours to explore"}
-            hashtag="#camperstribe"
-          >
-            <WhatsappIcon size={36} />
-          </WhatsappShareButton>
-
-
+              <WhatsappShareButton
+                  url={"http://www.camperstribe.com"}
+                  quote={"CampersTribe - World is yours to explore"}
+                  hashtag="#camperstribe"
+              >
+                <WhatsappIcon size={36} />
+              </WhatsappShareButton>
+            </div>
+          </div>
         </div>
       </div>
-
-
     );
   }
 }
