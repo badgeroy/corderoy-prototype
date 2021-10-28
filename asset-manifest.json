@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/corderoy-prototype/static/css/main.3eea971f.chunk.css",
+    "main.js": "/corderoy-prototype/static/js/main.31e6b047.chunk.js",
+    "main.js.map": "/corderoy-prototype/static/js/main.31e6b047.chunk.js.map",
+    "runtime-main.js": "/corderoy-prototype/static/js/runtime-main.d009cb6e.js",
+    "runtime-main.js.map": "/corderoy-prototype/static/js/runtime-main.d009cb6e.js.map",
+    "static/js/2.d8ccb21b.chunk.js": "/corderoy-prototype/static/js/2.d8ccb21b.chunk.js",
+    "static/js/2.d8ccb21b.chunk.js.map": "/corderoy-prototype/static/js/2.d8ccb21b.chunk.js.map",
+    "static/js/3.4909aec1.chunk.js": "/corderoy-prototype/static/js/3.4909aec1.chunk.js",
+    "static/js/3.4909aec1.chunk.js.map": "/corderoy-prototype/static/js/3.4909aec1.chunk.js.map",
+    "index.html": "/corderoy-prototype/index.html",
+    "static/css/main.3eea971f.chunk.css.map": "/corderoy-prototype/static/css/main.3eea971f.chunk.css.map",
+    "static/js/2.d8ccb21b.chunk.js.LICENSE.txt": "/corderoy-prototype/static/js/2.d8ccb21b.chunk.js.LICENSE.txt",
+    "static/media/left-arrow-icon.960a3e82.svg": "/corderoy-prototype/static/media/left-arrow-icon.960a3e82.svg",
+    "static/media/right-arrow-icon.f2df238b.svg": "/corderoy-prototype/static/media/right-arrow-icon.f2df238b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d009cb6e.js",
+    "static/js/2.d8ccb21b.chunk.js",
+    "static/css/main.3eea971f.chunk.css",
+    "static/js/main.31e6b047.chunk.js"
+  ]
+}
