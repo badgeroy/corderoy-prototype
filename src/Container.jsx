@@ -1,9 +1,11 @@
 import { useState, useCallback, memo } from 'react';
-import { NativeTypes } from 'react-dnd-html5-backend';
 import { Canvas } from './Canvas.jsx';
-import { Box } from './Box';
+import { Cloths } from './Cloths';
 import { ClothTypes } from './ClothTypes';
 import update from 'immutability-helper';
+//import { NativeTypes } from 'react-dnd-html5-backend';
+
+
 export const Container = memo(function Container() {
     const [canvases, setCanvases] = useState([
         { accepts: [ClothTypes.HEADWEAR], lastDroppedItem: null },
@@ -16,7 +18,7 @@ export const Container = memo(function Container() {
     ]);
     const [clothes] = useState([
         { name: 'Beanie', type: ClothTypes.HEADWEAR },
-        { name: 'Canada Goose Parka', type: [ClothTypes.WINTERWEAR },
+        { name: 'Canada Goose Parka', type: ClothTypes.WINTERWEAR},
         { name: 'Girotti Heals', type: ClothTypes.FOOTWEAR},
     ]);
     
@@ -25,24 +27,26 @@ export const Container = memo(function Container() {
     function isDropped(clothName) {
         return droppedClothNames.indexOf(clothName) > -1;
     }
+    
     const handleDrop = useCallback((index, item) => {
         const { name } = item;
-        setDroppedBoxNames(update(droppedBoxNames, name ? { $push: [name] } : { $push: [] }));
-        setDustbins(update(dustbins, {
+        setDroppedClothNames(update(droppedClothNames, name ? { $push: [name] } : { $push: [] }));
+        setCanvases(update(canvases, {
             [index]: {
                 lastDroppedItem: {
                     $set: item,
                 },
             },
         }));
-    }, [droppedBoxNames, dustbins]);
+    }, [droppedClothNames, canvases]);
+    
     return (<div>
 			<div style={{ overflow: 'hidden', clear: 'both' }}>
-				{dustbins.map(({ accepts, lastDroppedItem }, index) => (<Dustbin accept={accepts} lastDroppedItem={lastDroppedItem} onDrop={(item) => handleDrop(index, item)} key={index}/>))}
+				{canvases.map(({ accepts, lastDroppedItem }, index) => (<Canvas accept={accepts} lastDroppedItem={lastDroppedItem} onDrop={(item) => handleDrop(index, item)} key={index}/>))}
 			</div>
 
 			<div style={{ overflow: 'hidden', clear: 'both' }}>
-				{boxes.map(({ name, type }, index) => (<Box name={name} type={type} isDropped={isDropped(name)} key={index}/>))}
+				{clothes.map(({ name, type }, index) => (<Cloths name={name} type={type} isDropped={isDropped(name)} key={index}/>))}
 			</div>
 		</div>);
 });
