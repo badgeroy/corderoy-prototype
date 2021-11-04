@@ -1,4 +1,5 @@
 import './App.css';
+import GetShopbopdata from './components/GetShopbopData';
 import Wardrobe from "./Wardrobe";
 import DragAndDrop from "./DragAndDrop.jsx"
 
