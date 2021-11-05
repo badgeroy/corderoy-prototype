@@ -1,9 +1,9 @@
 import libmoji from 'libmoji';
-import './Wardrobe.css';
+import '../styles/Wardrobe.css';
 import React from "react";
 import {Button} from "reactstrap";
-import leftArrow from "./left-arrow-icon.svg";
-import rightArrow from "./right-arrow-icon.svg";
+import leftArrow from "../images/left-arrow-icon.svg";
+import rightArrow from "../images/right-arrow-icon.svg";
 import { FacebookShareButton, FacebookIcon } from "react-share";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 import { RedditShareButton, RedditIcon } from "react-share";
