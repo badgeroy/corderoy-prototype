@@ -1,0 +1,38 @@
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-nav {
+  font-size: 1rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+  max-width: 70vw;
+
+  --fader-padding: 5%;
+
+  padding-left: var(--fader-padding);
+
+  --fader: linear-gradient(
+          to right,
+          transparent,
+          black var(--fader-padding),
+          black calc(100% - var(--fader-padding)),
+          transparent
+  );
+
+  mask-image: var(--fader);
+}
+
+.navbar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  outline: none;
+  /*transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;*/
+}
+
+.nav-link:hover {
+  color: red;
+  border-color: red;
+}
