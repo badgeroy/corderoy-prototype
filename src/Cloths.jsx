@@ -19,5 +19,5 @@ export const Cloths = memo(function Canvas({ name, type, isDropped }) {
     }), [name, type]);
     return (<div ref={drag} role="Cloths" style={{ ...style, opacity }}>
 			{isDropped ? <s>{name}</s> : name}
-		</div>);
+		    </div>);
 });

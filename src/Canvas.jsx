@@ -12,7 +12,7 @@ const style = {
     lineHeight: 'normal',
     float: 'left',
 };
-export const Canvas = memo(function Dustbin({ accept, lastDroppedItem, onDrop, }) {
+export const Canvas = memo(function Canvas({ accept, lastDroppedItem, onDrop, }) {
     const [{ isOver, canDrop }, drop] = useDrop({
         accept,
         drop: onDrop,
