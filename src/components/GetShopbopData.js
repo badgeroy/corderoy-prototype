@@ -11,19 +11,24 @@ export default class GetShopbopData extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://api.shopbop.com/public/search?lang=en-US%C2%A4cy=USD&q=jeans&limit=40&minPrice=25&maxPrice=500&siteId=1006&allowOutOfStockItems=false&dept=WOMENS",
+        fetch("http://localhost:8010/proxy/public/search?lang=en-US&currency=USD&q=jeans&limit=40&minPrice=25&maxPrice=500&siteId=1006&allowOutOfStockItems=false&dept=WOMENS",
             {
                 method: 'GET',
                 headers: {
+                    
+                    'credentials': 'include',
                     'accept': 'application/json',
+                    'mode': 'no-cors',
                     'Client-Id': 'Shopbop-UW-Team2',
-                    'ShopbopAPIExplorer': '1.0.0'
+                    'ShopbopAPIExplorer': '1.0.0', 
+                    
                 }
             }
         )
             .then(res => res.json())
             .then(
                 (result) => {
+                    console.log(result);
                     this.setState({
                         isLoaded: true,
                         items: result.items
