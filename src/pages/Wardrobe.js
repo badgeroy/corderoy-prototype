@@ -1,38 +1,36 @@
-import '../styles/Wardrobe.css';
+import "../styles/Wardrobe.css";
 import React from "react";
 import {Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Catalog from "../components/Catalog";
-
-
-const categories = {
-  "jackets": "Jackets",
-  "coats": "Coats",
-  "jeans": "Jeans",
-  "pants": "Pants & Leggings",
-  "shorts": "Shorts",
-  "skirts": "Skirts",
-  "sweaters-knits": "Sweaters & Knits",
-  "tops": "Tops",
-  "boots": "Boots",
-  "flats": "Flats",
-  "mules": "Mules & Slides",
-  "pumps": "Pumps",
-  "sandals": "Sandals",
-  "sneakers": "Sneakers",
-  "backpacks": "Backpacks",
-  "clutches": "Clutches",
-  "cross": "Cross Body Bags",
-  "satchels": "Satchels & Top Handles",
-  "shoulders": "Shoulder Bags",
-  "totes": "Totes",
-  "hats": "Hats",
-  "scarves": "Scarves & Wraps",
-  "sunglasses": "Sunglasses & Eyewear",
-};
+import LeftArrow from "../images/left-arrow-icon.svg";
+import RightArrow from "../images/right-arrow-icon.svg";
+import {Category} from "../shopbop";
 
 
 class Wardrobe extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            categories: Category.getRootCategories()
+        };
+    }
+
+    componentDidMount() {
+        const leftArrow = document.getElementById("left-arrow");
+        const rightArrow = document.getElementById("right-arrow");
+        const navbarNav = document.getElementsByClassName("navbar-nav")[0];
+        const displayArrows = event => {
+          leftArrow.style.visibility = navbarNav.scrollLeft > 0 ?
+              "visible" : "hidden";
+          rightArrow.style.visibility = navbarNav.scrollLeft < navbarNav.scrollWidth - navbarNav.clientWidth ?
+              "visible" : "hidden";
+        }
+        displayArrows();
+        navbarNav.addEventListener("scroll", displayArrows);
+    }
+
     render() {
         return (
           <div className="Wardrobe">
@@ -40,22 +38,32 @@ class Wardrobe extends React.Component {
               <Navbar>
                 <Container fluid className="navbar-container">
                   <Navbar.Brand href="/">Corderoy</Navbar.Brand>
-                  <Nav>
-                    {Object.entries(categories).map(([idName, dispName]) => (
-                      <NavLink as={Link} to={"/" + idName}>{dispName}</NavLink>
-                    ))}
-                  </Nav>
+                  <div className="navbar-wrapper">
+                    <div className="navbar-arrows" id="left-arrow">
+                      <img src={LeftArrow}/>
+                    </div>
+                    <Nav>
+                      {this.state.categories.map(cat => (
+                          <NavLink className={"nav-" + cat.getId()} as={Link} to={"/" + cat.getId()}>
+                              {cat.getName()}
+                          </NavLink>
+                      ))}
+                    </Nav>
+                    <div className="navbar-arrows" id="right-arrow">
+                      <img src={RightArrow}/>
+                    </div>
+                  </div>
                 </Container>
               </Navbar>
               <Routes>
-                {Object.entries(categories).map(([idName, dispName]) => (
-                    <Route path={"/" + idName} element={<Catalog category={idName}/>}/>
+                {this.state.categories.map(cat => (
+                    <Route path={"/" + cat.getId()} element={<Catalog category={cat.getId()}/>}/>
                 ))}
               </Routes>
             </BrowserRouter>
           </div>
         );
-    }
+      }
 }
 
 export default Wardrobe;

@@ -1,4 +1,7 @@
-class Product {
+import categories from './tests/categories.json'
+
+
+export class Product {
     static Color = class {
         /**
          * @returns {String} the name of this color
@@ -51,7 +54,7 @@ class Product {
     }
 }
 
-class Category {
+export class Category {
     /**
      * I need you to iterate through the JSON returned from Shopbop and turn each of them into
      * this Category object. Don't forget to iterate through the children categories in the
@@ -62,21 +65,36 @@ class Category {
      * @returns {Category[]} an array of categories as returned from the Shopbop API
      */
     static getRootCategories = function() {
+        const rootCats = []
+        for (const subcat of categories.whatsNewCategory.children) {
+            if (!subcat.children)
+                continue;
+            for (const subsubcat of subcat.children) {
+                const id = subsubcat.id;
+                const name = subsubcat.name;
+                rootCats.push(new Category(id, name));
+            }
+        }
+        return rootCats;
+    }
 
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
     }
 
     /**
      * @returns {String} the numeric string ID of this category
      */
     getId() {
-
+        return this.id;
     }
 
     /**
      * @returns {String} the name of this category
      */
     getName() {
-
+        return this.name
     }
 
     /**

@@ -2,25 +2,39 @@
   padding: 1rem 2rem;
 }
 
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-arrows {
+  z-index: 2000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  visibility: hidden;
+}
+
+#left-arrow {
+  left: 48px;
+  background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+#right-arrow {
+  right: 48px;
+  background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+}
+
 .navbar-nav {
   font-size: 1rem;
   overflow-x: scroll;
   white-space: nowrap;
   max-width: 70vw;
-
-  --fader-padding: 5%;
-
-  padding-left: var(--fader-padding);
-
-  --fader: linear-gradient(
-          to right,
-          transparent,
-          black var(--fader-padding),
-          black calc(100% - var(--fader-padding)),
-          transparent
-  );
-
-  mask-image: var(--fader);
 }
 
 .navbar-nav::-webkit-scrollbar {
