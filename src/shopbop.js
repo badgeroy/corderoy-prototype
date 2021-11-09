@@ -1,56 +1,70 @@
 import categories from './tests/categories.json'
+import jackets from './tests/jackets.json'
 
 
 export class Product {
     static Color = class {
+        constructor(name, swatch, images) {
+            this.name = name;
+            this.swatch = swatch;
+            this.images = images;
+        }
+
         /**
          * @returns {String} the name of this color
          */
         getName() {
-
+            return this.name;
         }
 
         /**
          * @returns {String} the source of the swatch of this color (just the "src" from the JSON)
          */
         getSwatch() {
-
+            return this.swatch;
         }
 
         /**
          * @returns {String[]} subfolders of the images of this color's product (just the "src"s from the JSON)
          */
         getImages() {
-
+            return this.images;
         }
+    }
+
+    constructor(name, desc, price, colors) {
+        this.name = name;
+        this.desc = desc;
+        this.price = price;
+        this.colors = colors;
     }
 
     /**
      * @returns {String} the name of this product ("designerName" in the JSON returned from Shopbop)
      */
     getName() {
-
+        return this.name;
     }
 
     /**
      * @returns {String} the description of this product
      */
     getDescription() {
-
+        return this.name;
     }
 
     /**
      * @returns {String} the price of this product ("retailPrice.price" in the JSON returned from Shopbop)
      */
     getPrice() {
-
+        return this.price;
     }
 
     /**
      * @returns {Product.Color[]} an array of all available colors of this product
      */
     getColors() {
-
+        return this.colors;
     }
 }
 
@@ -109,6 +123,20 @@ export class Category {
      * @returns {Product[]} an array of products
      */
     getProducts() {
-
+        const products = []
+        for (const prod of jackets.products) {
+            const name = prod.product.designerName;
+            const desc = prod.product.shortDescription;
+            const price = prod.product.retailPrice.price;
+            const colors = []
+            for (const color of prod.product.colors) {
+                const colorName = color.name;
+                const swatch = color.swatch.src;
+                const images = color.images.map(img => img.src);
+                colors.push(new Product.Color(colorName, swatch, images));
+            }
+            products.push(new Product(name, desc, price, colors));
+        }
+        return products;
     }
 }
