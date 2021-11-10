@@ -11,12 +11,16 @@ export default class GetShopbopData extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:8010/proxy/public/search?lang=en-US&currency=USD&q=jeans&limit=40&minPrice=25&maxPrice=500&siteId=1006&allowOutOfStockItems=false&dept=WOMENS",
+        
+        var domain = 'https://api.shopbop.com';
+        var vpn = '';
+        var proxyCommand = 'lcp --proxyUrl https://api.shopbop.com --origin https://uw.shopbop.com';
+        
+        fetch(`https://localhost:8010/proxy/public/search?lang=en-US&currency=USD&q=jeans&limit=40&minPrice=25&maxPrice=500&siteId=1006&allowOutOfStockItems=false&dept=WOMENS`,
             {
                 method: 'GET',
                 headers: {
                     
-                    'credentials': 'include',
                     'accept': 'application/json',
                     'mode': 'no-cors',
                     'Client-Id': 'Shopbop-UW-Team2',

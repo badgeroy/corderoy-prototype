@@ -1,6 +1,6 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import GetShopbopdata from './components/GetShopbopData';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import GetShopbopData from './components/GetShopbopData';
 import Wardrobe from "./pages/Wardrobe";
 import DragAndDrop from "./DragAndDrop.jsx"
 
