@@ -32,18 +32,19 @@ export class Product {
         }
     }
 
-    constructor(name, desc, price, colors) {
-        this.name = name;
+    constructor(name, desc, price, storePage, colors) {
+        this.designer = name;
         this.desc = desc;
         this.price = price;
+        this.storePage = storePage;
         this.colors = colors;
     }
 
     /**
-     * @returns {String} the name of this product ("designerName" in the JSON returned from Shopbop)
+     * @returns {String} the designer of this product
      */
-    getName() {
-        return this.name;
+    getDesigner() {
+        return this.designer;
     }
 
     /**
@@ -58,6 +59,20 @@ export class Product {
      */
     getPrice() {
         return this.price;
+    }
+
+    /**
+     * @returns {String} the source of the main image
+     */
+    getMainImage() {
+        return this.colors[0].getImages()[0];
+    }
+
+    /**
+     * @returns {String} the source of this product's store page
+     */
+    getStorePage() {
+        return this.storePage;
     }
 
     /**
@@ -128,6 +143,7 @@ export class Category {
             const name = prod.product.designerName;
             const desc = prod.product.shortDescription;
             const price = prod.product.retailPrice.price;
+            const storePage = prod.product.productDetailUrl;
             const colors = []
             for (const color of prod.product.colors) {
                 const colorName = color.name;
@@ -135,7 +151,7 @@ export class Category {
                 const images = color.images.map(img => img.src);
                 colors.push(new Product.Color(colorName, swatch, images));
             }
-            products.push(new Product(name, desc, price, colors));
+            products.push(new Product(name, desc, price, storePage, colors));
         }
         return products;
     }
