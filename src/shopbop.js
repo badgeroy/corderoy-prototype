@@ -50,7 +50,7 @@ export class Product {
      * @returns {String} the description of this product
      */
     getDescription() {
-        return this.name;
+        return this.desc;
     }
 
     /**
