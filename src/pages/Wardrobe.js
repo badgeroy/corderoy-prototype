@@ -57,7 +57,7 @@ class Wardrobe extends React.Component {
               </Navbar>
               <Routes>
                 {this.state.categories.map(cat => (
-                    <Route path={"/" + cat.getId()} element={<Catalog category={cat.getId()}/>}/>
+                    <Route path={"/" + cat.getId()} element={<Catalog category={cat}/>}/>
                 ))}
               </Routes>
             </BrowserRouter>
