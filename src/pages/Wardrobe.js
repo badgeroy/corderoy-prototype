@@ -45,7 +45,7 @@ class Wardrobe extends React.Component {
                     <Nav>
                       {this.state.categories.map(cat => (
                           <NavLink className={"nav-" + cat.getId()} as={Link} to={"/" + cat.getId()}>
-                              {cat.getName()}
+                            {cat.getName()}
                           </NavLink>
                       ))}
                     </Nav>
@@ -55,11 +55,16 @@ class Wardrobe extends React.Component {
                   </div>
                 </Container>
               </Navbar>
-              <Routes>
-                {this.state.categories.map(cat => (
-                    <Route path={"/" + cat.getId()} element={<Catalog category={cat}/>}/>
-                ))}
-              </Routes>
+              <div className="Wardrobe-body">
+                <div className="outfit-list">
+
+                </div>
+                <Routes>
+                  {this.state.categories.map(cat => (
+                      <Route path={"/" + cat.getId()} element={<Catalog category={cat}/>}/>
+                  ))}
+                </Routes>
+              </div>
             </BrowserRouter>
           </div>
         );

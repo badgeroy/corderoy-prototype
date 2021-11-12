@@ -1,13 +1,37 @@
+.filter-menu {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-menu > * {
+    font-size: 0.6rem;
+}
+
+.price-input {
+    width: 4rem;
+}
+
+.card-body {
+    padding: 4%;
+}
+
 .card-title {
-    font-size: 0.85rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.65rem;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .card-label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
 }
 
 .card-desc {
@@ -16,5 +40,10 @@
     text-overflow: ellipsis;
     padding-right: 0.2rem;
     margin-bottom: 0;
+    text-align: left;
+}
+
+.card-price {
+    text-align: right;
 }
 

@@ -44,3 +44,13 @@
 .navbar-nav > a {
   outline: none;
 }
+
+.Wardrobe-body {
+  display: flex;
+  flex-direction: row;
+  padding: 0 6vw;
+}
+
+.outfit-list {
+  min-width: 30vw;
+}
