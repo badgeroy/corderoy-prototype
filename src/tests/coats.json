@@ -1,0 +1,1814 @@
+{
+    "products": [
+        {
+            "product": {
+                "productSin": "1507403366",
+                "productCode": "CANAD30471",
+                "shortDescription": "Alliston Jacket",
+                "designerName": "Canada Goose",
+                "designerCode": "CANAD",
+                "retailPrice": {
+                    "price": "$895.00",
+                    "usdPrice": 895.00
+                },
+                "highPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2093824718",
+                        "name": "Red",
+                        "images": [
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_1636572850978_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_q2_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_q3_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_q4_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_q5_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad30471102d9/canad30471102d9_q6_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/canad/canad30471102d9/canad30471102d9_sw_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2532079838",
+                            "2580300112",
+                            "2567101710",
+                            "2581959918",
+                            "2524436527",
+                            "2522285606"
+                        ]
+                    },
+                    {
+                        "colorSin": "2041670521",
+                        "name": "N Star Wh-Bl De LEt Du Nrd",
+                        "images": [
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q1_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q2_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q3_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q4_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q5_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad3047118c49/canad3047118c49_q6_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/canad/canad3047118c49/canad3047118c49_sw_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2525546142",
+                            "2546410459",
+                            "2593233137",
+                            "2578183126",
+                            "2586261170",
+                            "2554064359"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2532079838",
+                            "2525546142"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2580300112",
+                            "2546410459"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2567101710",
+                            "2593233137"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2581959918",
+                            "2578183126"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2524436527",
+                            "2586261170"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2522285606",
+                            "2554064359"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/alliston-jacket-canada-goose/vp/v=1/1507403366.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2093824718"
+        },
+        {
+            "product": {
+                "productSin": "1594438752",
+                "productCode": "STAND30005",
+                "shortDescription": "Patrice Coat",
+                "designerName": "STAND STUDIO",
+                "designerCode": "STAND",
+                "retailPrice": {
+                    "price": "$715.00",
+                    "usdPrice": 715.00
+                },
+                "highPrice": {
+                    "price": "$715.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$715.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2007496810",
+                        "name": "Black/Black",
+                        "images": [
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q1_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q2_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q3_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q4_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q5_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand30005129ed/stand30005129ed_q6_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/stand/stand30005129ed/stand30005129ed_sw_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2511363759",
+                            "2531554447",
+                            "2570901752",
+                            "2595601635",
+                            "2525190464",
+                            "2592176238",
+                            "2584250803"
+                        ]
+                    },
+                    {
+                        "colorSin": "2037055122",
+                        "name": "Off White/Off White",
+                        "images": [
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q1_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q2_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q3_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q4_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q5_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_q6_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/stand/stand3000513ce7/stand3000513ce7_sw_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2576569653",
+                            "2523471493",
+                            "2513942234",
+                            "2561093526",
+                            "2589050601",
+                            "2502062261",
+                            "2563084423"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "32",
+                        "sizeSins": [
+                            "2511363759",
+                            "2576569653"
+                        ]
+                    },
+                    {
+                        "name": "34",
+                        "sizeSins": [
+                            "2531554447",
+                            "2523471493"
+                        ]
+                    },
+                    {
+                        "name": "36",
+                        "sizeSins": [
+                            "2570901752",
+                            "2513942234"
+                        ]
+                    },
+                    {
+                        "name": "38",
+                        "sizeSins": [
+                            "2595601635",
+                            "2561093526"
+                        ]
+                    },
+                    {
+                        "name": "40",
+                        "sizeSins": [
+                            "2525190464",
+                            "2589050601"
+                        ]
+                    },
+                    {
+                        "name": "42",
+                        "sizeSins": [
+                            "2592176238",
+                            "2502062261"
+                        ]
+                    },
+                    {
+                        "name": "44",
+                        "sizeSins": [
+                            "2584250803",
+                            "2563084423"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/patrice-coat-stand-studio/vp/v=1/1594438752.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2007496810"
+        },
+        {
+            "product": {
+                "productSin": "1593514167",
+                "productCode": "PSWLL30200",
+                "shortDescription": "Faux Leather Puffer Coat",
+                "designerName": "Proenza Schouler White Label",
+                "designerCode": "PSWLL",
+                "retailPrice": {
+                    "price": "$895.00",
+                    "usdPrice": 895.00
+                },
+                "highPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2039162583",
+                        "name": "Blush",
+                        "images": [
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698376398_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698376681_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698376499_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698376655_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698377006_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698376588_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/pswll/pswll302001a16f/pswll302001a16f_1630698375021_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2538946228",
+                            "2588067824",
+                            "2506081565",
+                            "2579399726",
+                            "2540420092",
+                            "2572762361"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2538946228"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2588067824"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2506081565"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2579399726"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2540420092"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2572762361"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/faux-leather-puffer-coat-proenza/vp/v=1/1593514167.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2039162583"
+        },
+        {
+            "product": {
+                "productSin": "1566888596",
+                "productCode": "VELVE41548",
+                "shortDescription": "Linda Jacket",
+                "designerName": "Velvet",
+                "designerCode": "VELVE",
+                "retailPrice": {
+                    "price": "$299.00",
+                    "usdPrice": 299.00
+                },
+                "highPrice": {
+                    "price": "$299.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$299.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2022515374",
+                        "name": "Mink",
+                        "images": [
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636579646194_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560573755_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560572459_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560573284_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560573965_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560572447_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/velve/velve4154810935/velve4154810935_1636560570635_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2561032325",
+                            "2528078519",
+                            "2526947713",
+                            "2560810547",
+                            "2574308556"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2561032325"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2528078519"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2526947713"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2560810547"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2574308556"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/linda05-velvet/vp/v=1/1566888596.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2022515374"
+        },
+        {
+            "product": {
+                "productSin": "1514116166",
+                "productCode": "BBDAK43400",
+                "shortDescription": "Whiskey Business Coat",
+                "designerName": "BB Dakota",
+                "designerCode": "BBDAK",
+                "retailPrice": {
+                    "price": "$139.00",
+                    "usdPrice": 139.00
+                },
+                "highPrice": {
+                    "price": "$139.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$139.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2099572837",
+                        "name": "Alabaster",
+                        "images": [
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781680575_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781680394_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781680327_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781708964_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781680664_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781680428_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/bbdak/bbdak4340013693/bbdak4340013693_1635781679797_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2537129149",
+                            "2579556858",
+                            "2589875783",
+                            "2565427570"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2537129149"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2579556858"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2589875783"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2565427570"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/whiskey-business-coat-bb-dakota/vp/v=1/1514116166.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2099572837"
+        },
+        {
+            "product": {
+                "productSin": "1583434463",
+                "productCode": "SAMAA30223",
+                "shortDescription": "Long Noho Jacket",
+                "designerName": "SAM.",
+                "designerCode": "SAMAA",
+                "retailPrice": {
+                    "price": "$675.00",
+                    "usdPrice": 675.00
+                },
+                "highPrice": {
+                    "price": "$675.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$675.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2039890074",
+                        "name": "Jet",
+                        "images": [
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871656528_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871656764_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871656728_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871659673_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871658665_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871656843_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/samaa/samaa3022312164/samaa3022312164_1635871656106_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2599603814",
+                            "2552118473",
+                            "2564112409",
+                            "2591882697",
+                            "2542889653"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2599603814"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2552118473"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2564112409"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2591882697"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2542889653"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/long-noho-sam/vp/v=1/1583434463.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2039890074"
+        },
+        {
+            "product": {
+                "productSin": "1584583478",
+                "productCode": "MACKA40714",
+                "shortDescription": "Leonie Parka",
+                "designerName": "Mackage",
+                "designerCode": "MACKA",
+                "retailPrice": {
+                    "price": "$950.00",
+                    "usdPrice": 950.00
+                },
+                "highPrice": {
+                    "price": "$950.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$950.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2012981714",
+                        "name": "Black",
+                        "images": [
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866661_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866582_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137865521_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866501_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866580_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866893_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/macka/macka407141b002/macka407141b002_1636137866241_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2592583398",
+                            "2517011986",
+                            "2540392860",
+                            "2554294308",
+                            "2500730765",
+                            "2582885257"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2592583398"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2517011986"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2540392860"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2554294308"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2500730765"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2582885257"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/leonie-mackage/vp/v=1/1584583478.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2012981714"
+        },
+        {
+            "product": {
+                "productSin": "1593219085",
+                "productCode": "BGNER30001",
+                "shortDescription": "Raissa Quilted Jacket",
+                "designerName": "Bogner",
+                "designerCode": "BGNER",
+                "retailPrice": {
+                    "price": "$590.00",
+                    "usdPrice": 590.00
+                },
+                "highPrice": {
+                    "price": "$590.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$590.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2045170278",
+                        "name": "Navy",
+                        "images": [
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392881387_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392879887_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392880125_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392879637_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392881565_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392881181_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/bgner/bgner30001124bd/bgner30001124bd_1636392879220_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2559497790",
+                            "2568333990",
+                            "2523477752",
+                            "2522951242",
+                            "2522589610",
+                            "2567719856"
+                        ]
+                    },
+                    {
+                        "colorSin": "2099217953",
+                        "name": "Tan",
+                        "images": [
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060869306_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060869294_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060869044_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060868871_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060869224_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060869038_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/bgner/bgner3000111841/bgner3000111841_1636060866926_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2550755486",
+                            "2584396803",
+                            "2562655666",
+                            "2558923808",
+                            "2506335219",
+                            "2503636049"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "4",
+                        "sizeSins": [
+                            "2559497790",
+                            "2550755486"
+                        ]
+                    },
+                    {
+                        "name": "6",
+                        "sizeSins": [
+                            "2568333990",
+                            "2584396803"
+                        ]
+                    },
+                    {
+                        "name": "8",
+                        "sizeSins": [
+                            "2523477752",
+                            "2562655666"
+                        ]
+                    },
+                    {
+                        "name": "10",
+                        "sizeSins": [
+                            "2522951242",
+                            "2558923808"
+                        ]
+                    },
+                    {
+                        "name": "12",
+                        "sizeSins": [
+                            "2522589610",
+                            "2506335219"
+                        ]
+                    },
+                    {
+                        "name": "14",
+                        "sizeSins": [
+                            "2567719856",
+                            "2503636049"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/raissa-bogner/vp/v=1/1593219085.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2045170278"
+        },
+        {
+            "product": {
+                "productSin": "1599384807",
+                "productCode": "SAMAA30218",
+                "shortDescription": "Bungalow Jacket",
+                "designerName": "SAM.",
+                "designerCode": "SAMAA",
+                "retailPrice": {
+                    "price": "$495.00",
+                    "usdPrice": 495.00
+                },
+                "highPrice": {
+                    "price": "$495.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$495.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2040003115",
+                        "name": "Caviar",
+                        "images": [
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472714_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472575_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472954_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472301_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472492_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458472495_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/samaa/samaa3021813655/samaa3021813655_1635458471828_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2573619610",
+                            "2514229683",
+                            "2506666220",
+                            "2580666082",
+                            "2562910897"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2573619610"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2514229683"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2506666220"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2580666082"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2562910897"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/bungalow-jacket-sam/vp/v=1/1599384807.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2040003115"
+        },
+        {
+            "product": {
+                "productSin": "1581147709",
+                "productCode": "TORYB49060",
+                "shortDescription": "Printed Hooded Down Jacket",
+                "designerName": "Tory Burch",
+                "designerCode": "TORYB",
+                "retailPrice": {
+                    "price": "$498.00",
+                    "usdPrice": 498.00
+                },
+                "highPrice": {
+                    "price": "$498.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$498.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2050728235",
+                        "name": "RETRO BATIK",
+                        "images": [
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873031730_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873031549_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873030422_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873030753_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873030657_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873030300_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/toryb/toryb490601be98/toryb490601be98_1635873030466_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2540378744",
+                            "2583870220",
+                            "2553063662",
+                            "2510610471",
+                            "2546325416",
+                            "2571087553"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2540378744"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2583870220"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2553063662"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2510610471"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2546325416"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2571087553"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/printed-hooded-down-jacket-tory/vp/v=1/1581147709.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2050728235"
+        },
+        {
+            "product": {
+                "productSin": "1556398006",
+                "productCode": "BASHH30288",
+                "shortDescription": "Boston Coat",
+                "designerName": "ba&sh",
+                "designerCode": "BASHH",
+                "retailPrice": {
+                    "price": "$495.00",
+                    "usdPrice": 495.00
+                },
+                "highPrice": {
+                    "price": "$495.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$495.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2015599505",
+                        "name": "Grisclairchine",
+                        "images": [
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875279305_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875279286_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875279179_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875278833_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875279900_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875279210_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/bashh/bashh302881c1a6/bashh302881c1a6_1635875278643_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2512975770",
+                            "2569610936",
+                            "2514083809",
+                            "2563085631"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "0",
+                        "sizeSins": [
+                            "2512975770"
+                        ]
+                    },
+                    {
+                        "name": "1",
+                        "sizeSins": [
+                            "2569610936"
+                        ]
+                    },
+                    {
+                        "name": "2",
+                        "sizeSins": [
+                            "2514083809"
+                        ]
+                    },
+                    {
+                        "name": "3",
+                        "sizeSins": [
+                            "2563085631"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/boston-coat-bash/vp/v=1/1556398006.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2015599505"
+        },
+        {
+            "product": {
+                "productSin": "1541521095",
+                "productCode": "NLOTA21089",
+                "shortDescription": "Kidman Coat",
+                "designerName": "Nili Lotan",
+                "designerCode": "NLOTA",
+                "retailPrice": {
+                    "price": "$1,395.00",
+                    "usdPrice": 1395.00
+                },
+                "highPrice": {
+                    "price": "$1,395.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$1,395.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2061081076",
+                        "name": "Mahogany/Beige Houndstooth",
+                        "images": [
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801105300_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801105663_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801105427_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801104275_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801104802_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801104326_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/nlota/nlota210891c17b/nlota210891c17b_1635801103482_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2593750330",
+                            "2589439712",
+                            "2596323885",
+                            "2537972441"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2593750330"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2589439712"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2596323885"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2537972441"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/kidman-coat-nili-lotan/vp/v=1/1541521095.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2061081076"
+        },
+        {
+            "product": {
+                "productSin": "1552975115",
+                "productCode": "CANAD30565",
+                "shortDescription": "Alliston Jacket",
+                "designerName": "Canada Goose",
+                "designerCode": "CANAD",
+                "retailPrice": {
+                    "price": "$895.00",
+                    "usdPrice": 895.00
+                },
+                "highPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$895.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2061040278",
+                        "name": "MOONSTONE GREY",
+                        "images": [
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755880_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755757_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755870_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755654_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470757111_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755643_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/canad/canad305651b727/canad305651b727_1633470755170_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2587358031",
+                            "2580394016",
+                            "2502129928",
+                            "2574496846",
+                            "2529111731",
+                            "2564213668",
+                            "2584661680"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2587358031"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2580394016"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2502129928"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2574496846"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2529111731"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2564213668"
+                        ]
+                    },
+                    {
+                        "name": "2X",
+                        "sizeSins": [
+                            "2584661680"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/alliston-jacket-canada-goose/vp/v=1/1552975115.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2061040278"
+        },
+        {
+            "product": {
+                "productSin": "1593778917",
+                "productCode": "APPAR30114",
+                "shortDescription": "Milly Coat",
+                "designerName": "Apparis",
+                "designerCode": "APPAR",
+                "retailPrice": {
+                    "price": "$345.00",
+                    "usdPrice": 345.00
+                },
+                "highPrice": {
+                    "price": "$345.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "lowPrice": {
+                    "price": "$345.00",
+                    "onSale": false,
+                    "salePercentage": 0.0
+                },
+                "giftWithPurchase": false,
+                "giftBox": false,
+                "giftCertificate": false,
+                "reviews": {
+                    "count": 0
+                },
+                "colors": [
+                    {
+                        "colorSin": "2027451390",
+                        "name": "Raspberry",
+                        "images": [
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825542285_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825541993_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825542128_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825541938_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825543542_2-0.jpg"
+                            },
+                            {
+                                "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825543440_2-0.jpg"
+                            }
+                        ],
+                        "swatch": {
+                            "src": "/prod/products/appar/appar3011412094/appar3011412094_1631825541244_2-0.jpg"
+                        },
+                        "sizeSins": [
+                            "2583565792",
+                            "2521827600",
+                            "2521459760",
+                            "2549023174",
+                            "2521435411",
+                            "2544186206",
+                            "2528217706"
+                        ]
+                    }
+                ],
+                "sizes": [
+                    {
+                        "name": "XXS",
+                        "sizeSins": [
+                            "2583565792"
+                        ]
+                    },
+                    {
+                        "name": "XS",
+                        "sizeSins": [
+                            "2521827600"
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "sizeSins": [
+                            "2521459760"
+                        ]
+                    },
+                    {
+                        "name": "M",
+                        "sizeSins": [
+                            "2549023174"
+                        ]
+                    },
+                    {
+                        "name": "L",
+                        "sizeSins": [
+                            "2521435411"
+                        ]
+                    },
+                    {
+                        "name": "XL",
+                        "sizeSins": [
+                            "2544186206"
+                        ]
+                    },
+                    {
+                        "name": "XXL",
+                        "sizeSins": [
+                            "2528217706"
+                        ]
+                    }
+                ],
+                "productDetailUrl": "/milly-apparis/vp/v=1/1593778917.htm",
+                "inStock": true,
+                "gender": "WOMENS"
+            },
+            "colorSin": "2027451390"
+        }
+    ],
+    "sortAndFilterOptions": {
+        "minPrice": 139,
+        "maxPrice": 1395,
+        "localizedMinPrice": 139,
+        "localizedMaxPrice": 1395,
+        "sortOptions": [
+            {
+                "id": "priority",
+                "name": "Newest"
+            },
+            {
+                "id": "price-low-high",
+                "name": "Price: Low to High"
+            },
+            {
+                "id": "price-high-low",
+                "name": "Price: High to Low"
+            },
+            {
+                "id": "hearts",
+                "name": "My Hearts"
+            },
+            {
+                "id": "editors-pick",
+                "name": "Editors' Picks"
+            },
+            {
+                "id": "exclusives",
+                "name": "Designer Exclusives"
+            },
+            {
+                "id": "ratings",
+                "name": "Ratings: High to Low"
+            }
+        ],
+        "colors": [
+            {
+                "id": "Black",
+                "name": "Black",
+                "count": 4
+            },
+            {
+                "id": "Blue",
+                "name": "Blue",
+                "count": 2
+            },
+            {
+                "id": "Brown",
+                "name": "Brown",
+                "count": 3
+            },
+            {
+                "id": "Floral",
+                "name": "Floral",
+                "count": 1
+            },
+            {
+                "id": "Grey",
+                "name": "Grey",
+                "count": 2
+            },
+            {
+                "id": "Multi",
+                "name": "Multi",
+                "count": 3
+            },
+            {
+                "id": "Off+White",
+                "name": "Off White",
+                "count": 1
+            },
+            {
+                "id": "Pink",
+                "name": "Pink",
+                "count": 3
+            },
+            {
+                "id": "Print",
+                "name": "Print",
+                "count": 1
+            },
+            {
+                "id": "Red",
+                "name": "Red",
+                "count": 1
+            }
+        ],
+        "denimWashes": [],
+        "designers": [
+            {
+                "id": "APPAR",
+                "name": "Apparis",
+                "count": 1
+            },
+            {
+                "id": "BASHH",
+                "name": "ba&sh",
+                "count": 1
+            },
+            {
+                "id": "BBDAK",
+                "name": "BB Dakota",
+                "count": 1
+            },
+            {
+                "id": "BGNER",
+                "name": "Bogner",
+                "count": 1
+            },
+            {
+                "id": "CANAD",
+                "name": "Canada Goose",
+                "count": 2
+            },
+            {
+                "id": "MACKA",
+                "name": "Mackage",
+                "count": 1
+            },
+            {
+                "id": "NLOTA",
+                "name": "Nili Lotan",
+                "count": 1
+            },
+            {
+                "id": "PSWLL",
+                "name": "Proenza Schouler White Label",
+                "count": 1
+            },
+            {
+                "id": "SAMAA",
+                "name": "SAM.",
+                "count": 2
+            },
+            {
+                "id": "STAND",
+                "name": "STAND STUDIO",
+                "count": 1
+            },
+            {
+                "id": "TORYB",
+                "name": "Tory Burch",
+                "count": 1
+            },
+            {
+                "id": "VELVE",
+                "name": "Velvet",
+                "count": 1
+            }
+        ],
+        "sizes": [
+            {
+                "name": "Clothing",
+                "facets": [
+                    {
+                        "id": "clothing.00-XXS",
+                        "name": "00, XXS",
+                        "count": 1
+                    },
+                    {
+                        "id": "clothing.0-XS",
+                        "name": "0, XS",
+                        "count": 13
+                    },
+                    {
+                        "id": "clothing.2-XS-S",
+                        "name": "2, XS, S",
+                        "count": 13
+                    },
+                    {
+                        "id": "clothing.4-S-M",
+                        "name": "4, S, M",
+                        "count": 13
+                    },
+                    {
+                        "id": "clothing.6-M",
+                        "name": "6, M",
+                        "count": 12
+                    },
+                    {
+                        "id": "clothing.8-M-L",
+                        "name": "8, M, L",
+                        "count": 13
+                    },
+                    {
+                        "id": "clothing.10-L",
+                        "name": "10, L",
+                        "count": 12
+                    },
+                    {
+                        "id": "clothing.12-L-XL",
+                        "name": "12, L, XL",
+                        "count": 12
+                    },
+                    {
+                        "id": "clothing.14-XL",
+                        "name": "14, XL",
+                        "count": 8
+                    },
+                    {
+                        "id": "clothing.16-XXL",
+                        "name": "16, XXL",
+                        "count": 1
+                    },
+                    {
+                        "id": "clothing.18-20-2XL",
+                        "name": "18, 20, 2XL",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "totalResults": 14,
+    "sortedBy": "priority"
+}

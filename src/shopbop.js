@@ -1,5 +1,6 @@
 import categories from './tests/categories.json'
 import jackets from './tests/jackets.json'
+import coats from './tests/coats.json'
 
 
 export class Product {
@@ -138,8 +139,9 @@ export class Category {
      * @returns {Product[]} an array of products
      */
     getProducts() {
-        const products = []
-        for (const prod of jackets.products) {
+        const idMap = {"65702": jackets, "65248": coats}
+        const id = this.getId()
+        for (const prod of idMap[id].products) {
             const name = prod.product.designerName;
             const desc = prod.product.shortDescription;
             const price = prod.product.retailPrice.price;
