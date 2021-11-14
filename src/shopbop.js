@@ -139,9 +139,15 @@ export class Category {
      * @returns {Product[]} an array of products
      */
     getProducts() {
-        const idMap = {"65702": jackets, "65248": coats}
+        const idMap = {
+            "65702": jackets,
+            "65248": coats
+        };
+
         const id = this.getId()
-        for (const prod of idMap[id].products) {
+        const products = []
+        const catJson = !idMap[id] ? coats : idMap[id];
+        for (const prod of catJson.products) {
             const name = prod.product.designerName;
             const desc = prod.product.shortDescription;
             const price = prod.product.retailPrice.price;
