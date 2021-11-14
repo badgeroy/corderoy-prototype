@@ -7,27 +7,29 @@ class Catalog extends React.Component {
         const products = this.props.category.getProducts();
         return (
             <div className="Catalog">
-              <Form className="filter-menu">
-                <Form.Select className="sort-input">
-                  <option>Sort</option>
-                  <option>Editor's Pick</option>
-                  <option>Exclusives</option>
-                  <option>Hearts</option>
-                  <option>Price High to Low</option>
-                  <option>Price Low to High</option>
-                  <option>Ratings</option>
-                </Form.Select>
-                <Form.Group>
-                  <Form.Control className="price-input" type="text" placeholder="$ Min"/>
-                  <Form.Control className="price-input" type="text" placeholder="$ Max"/>
-                  <Form.Control className="query-input" type="text" placeholder="Search"/>
-                  <Button className="apply-btn" variant="primary" type="submit">
-                    Apply
-                  </Button>
-                </Form.Group>
-              </Form>
               <div className="cards">
                 <Container fluid>
+                  <Row>
+                    <Form className="filter-menu">
+                      <Form.Select className="sort-input shadow-none">
+                        <option>Sort</option>
+                        <option>Editor's Pick</option>
+                        <option>Exclusives</option>
+                        <option>Hearts</option>
+                        <option>Price High to Low</option>
+                        <option>Price Low to High</option>
+                        <option>Ratings</option>
+                      </Form.Select>
+                      <Form.Group className="query-group">
+                        <Form.Control className="price-input min-price-input shadow-none" type="text" placeholder="$ Min"/>
+                        <Form.Control className="price-input max-price-input shadow-none" type="text" placeholder="$ Max"/>
+                        <Form.Control className="query-input shadow-none" type="text" placeholder="Search"/>
+                        <Button className="apply-btn shadow-none" variant="primary" type="submit">
+                          Apply
+                        </Button>
+                      </Form.Group>
+                    </Form>
+                  </Row>
                   <Row xs={3} md={5} className="g-4">
                       {this.props.category.getProducts().map(prod => (
                           <Col>
