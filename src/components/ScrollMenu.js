@@ -13,7 +13,7 @@ class ScrollMenu extends React.Component {
         this.leftArrow.style.left = (this.leftArrow.clientWidth + this.rightArrow.clientWidth).toString() + "px";
         this.leftArrow.style.visibility = "hidden";
         this.rightArrow.style.left = this.menuContent.clientWidth.toString() + "px";
-        this.rightArrow.style.visibility = "visible";
+        this.rightArrow.style.visibility = this.menuContent.scrollWidth - this.menuContent.clientWidth > 0 ? "visible" : "hidden";
     }
 
     menuOnScroll(event) {
@@ -28,7 +28,7 @@ class ScrollMenu extends React.Component {
     render() {
         return (
             <div className={"ScrollMenu" + (this.props.className ? " " + this.props.className : "")}>
-              <div className="arrow-container" id="left-arrow" ref={e => this.leftArrow = e}>
+              <div className="arrow-container left-arrow" ref={e => this.leftArrow = e}>
                 <div className="arrow-identifier">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="navigate_before_24px">
@@ -38,7 +38,7 @@ class ScrollMenu extends React.Component {
                 </div>
                 <div className="arrow-gradient"/>
               </div>
-              <div className="arrow-container" id="right-arrow" ref={e => this.rightArrow = e}>
+              <div className="arrow-container right-arrow" ref={e => this.rightArrow = e}>
                 <div className="arrow-gradient"/>
                 <div className="arrow-identifier">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

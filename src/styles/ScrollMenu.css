@@ -1,20 +1,21 @@
 .ScrollMenu {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
-.menu-content {
+.ScrollMenu .menu-content {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
-.menu-content::-webkit-scrollbar {
+.ScrollMenu .menu-content::-webkit-scrollbar {
     display: none;
 }
 
-.arrow-container {
+.ScrollMenu .arrow-container {
     position: relative;
     z-index: 2000;
     min-height: 100%;
@@ -23,26 +24,26 @@
     flex-direction: row;
 }
 
-.arrow-container .arrow-gradient {
+.ScrollMenu .arrow-container .arrow-gradient {
     min-width: 3em;
 }
 
-.arrow-container .arrow-identifier {
+.ScrollMenu .arrow-container .arrow-identifier {
     display: flex;
     justify-content: center;
     background-color: white;
 }
 
-.arrow-container svg {
+.ScrollMenu .arrow-container svg {
     height: 100%;
 }
 
-#left-arrow > .arrow-gradient {
+.ScrollMenu .left-arrow > .arrow-gradient {
     height: 100%;
     background: linear-gradient(to right, white, transparent);
 }
 
-#right-arrow > .arrow-gradient {
+.ScrollMenu .right-arrow > .arrow-gradient {
     height: 100%;
     background: linear-gradient(to left, white, transparent);
 }
