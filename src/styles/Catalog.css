@@ -45,6 +45,10 @@
     border-radius: 0 5px 5px 0;
 }
 
+.card {
+    width: 8rem;
+}
+
 .card-body {
     padding: 4%;
 }

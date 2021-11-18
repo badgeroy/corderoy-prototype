@@ -36,10 +36,10 @@ class Catalog extends React.Component {
                       const end = start + colPerRow;
                       return products.slice(start, end);
                   }).map((row, idx) => (
-                      <Row className="no-gutters" key={idx}>
+                      <Row className="no-gutters" key={idx} xs={colPerRow}>
                         {row.map(prod => (
                             <Col>
-                              <Card style={{ width: "100%", minWidth: "85px", maxWidth: "160px" }}>
+                              <Card style={{marginRight: 0}}>
                                 <Card.Img variant="top" src={"https://m.media-amazon.com/images/G/01/Shopbop/p" + prod.getMainImage()} />
                                 <Card.Body>
                                   <Card.Title>{prod.getDesigner()}</Card.Title>
