@@ -19,9 +19,11 @@
   justify-content: space-between;
 }
 
-.outfit-list-title {
+.outfit-list-wrapper {
+  width: 40%;
+}
+
+.outfit-list-content {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  height: 100px;
 }

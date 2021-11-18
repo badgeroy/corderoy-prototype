@@ -36,7 +36,7 @@ class Catalog extends React.Component {
                       const end = start + colPerRow;
                       return products.slice(start, end);
                   }).map((row, idx) => (
-                      <Row key={idx}>
+                      <Row className="no-gutters" key={idx}>
                         {row.map(prod => (
                             <Col>
                               <Card style={{ width: "100%", minWidth: "85px", maxWidth: "160px" }}>
