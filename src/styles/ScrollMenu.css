@@ -40,10 +40,10 @@
 
 .ScrollMenu .left-arrow > .arrow-gradient {
     height: 100%;
-    background: linear-gradient(to right, white, transparent);
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
 }
 
 .ScrollMenu .right-arrow > .arrow-gradient {
     height: 100%;
-    background: linear-gradient(to left, white, transparent);
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
 }

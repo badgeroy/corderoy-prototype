@@ -113,6 +113,10 @@ export class Category {
         this.name = name;
     }
 
+    getClothing() {
+        return "winterwear"
+    }
+
     /**
      * @returns {String} the numeric string ID of this category
      */

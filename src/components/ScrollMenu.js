@@ -1,6 +1,4 @@
 import "../styles/ScrollMenu.css"
-import LeftArrowIcon from  "../images/navigate_before_24px_outlined.svg"
-import RightArrowIcon from  "../images/navigate_next_24px_outlined.svg"
 import React from "react";
 
 class ScrollMenu extends React.Component {
