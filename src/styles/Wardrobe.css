@@ -1,56 +1,27 @@
 .navbar {
   padding: 1rem 2rem;
+  background-color: white;
 }
 
-.navbar-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-arrows {
-  z-index: 2000;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  visibility: hidden;
-}
-
-#left-arrow {
-  left: 48px;
-  background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
-}
-
-#right-arrow {
-  right: 48px;
-  background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
-}
-
-.navbar-nav {
+.navbar-menu  {
   font-size: 1rem;
-  overflow-x: scroll;
-  white-space: nowrap;
-  max-width: 70vw;
 }
 
-.navbar-nav::-webkit-scrollbar {
-  display: none;
-}
-
-.navbar-nav > a {
+.navbar-menu .nav-link {
   outline: none;
+  color: black;
 }
 
 .Wardrobe-body {
   display: flex;
   flex-direction: row;
   padding: 0 6vw;
+  justify-content: space-between;
 }
 
-.outfit-list {
-  min-width: 30vw;
+.outfit-list-title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100px;
 }

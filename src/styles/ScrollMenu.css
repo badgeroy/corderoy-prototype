@@ -1,0 +1,48 @@
+.ScrollMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.menu-content::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow-container {
+    position: relative;
+    z-index: 2000;
+    min-height: 100%;
+    min-width: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-container .arrow-gradient {
+    min-width: 3em;
+}
+
+.arrow-container .arrow-identifier {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.arrow-container svg {
+    height: 100%;
+}
+
+#left-arrow > .arrow-gradient {
+    height: 100%;
+    background: linear-gradient(to right, white, transparent);
+}
+
+#right-arrow > .arrow-gradient {
+    height: 100%;
+    background: linear-gradient(to left, white, transparent);
+}

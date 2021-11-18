@@ -5,6 +5,7 @@ import {Card, Col, Container, Row, Form, Button} from "react-bootstrap";
 class Catalog extends React.Component {
     render() {
         const products = this.props.category.getProducts();
+        const colPerRow = 5;
         return (
             <div className="Catalog">
               <div className="cards">
@@ -30,22 +31,28 @@ class Catalog extends React.Component {
                       </Form.Group>
                     </Form>
                   </Row>
-                  <Row xs={3} md={5} className="g-4">
-                      {this.props.category.getProducts().map(prod => (
-                          <Col>
-                            <Card style={{ width: "100%", minWidth: "85px", maxWidth: "160px" }}>
-                              <Card.Img variant="top" src={"https://m.media-amazon.com/images/G/01/Shopbop/p" + prod.getMainImage()} />
-                              <Card.Body>
-                                <Card.Title>{prod.getDesigner()}</Card.Title>
-                                <div className="card-label">
-                                  <Card.Text className="card-desc">{prod.getDescription()}</Card.Text>
-                                  <Card.Text className="card-price">{prod.getPrice()}</Card.Text>
-                                </div>
-                              </Card.Body>
-                            </Card>
-                          </Col>
-                      ))}
-                  </Row>
+                  {[...Array(Math.ceil(products.length / colPerRow))].map((row, idx) => {
+                      const start = idx * colPerRow;
+                      const end = start + colPerRow;
+                      return products.slice(start, end);
+                  }).map((row, idx) => (
+                      <Row key={idx}>
+                        {row.map(prod => (
+                            <Col>
+                              <Card style={{ width: "100%", minWidth: "85px", maxWidth: "160px" }}>
+                                <Card.Img variant="top" src={"https://m.media-amazon.com/images/G/01/Shopbop/p" + prod.getMainImage()} />
+                                <Card.Body>
+                                  <Card.Title>{prod.getDesigner()}</Card.Title>
+                                  <div className="card-label">
+                                    <Card.Text className="card-desc">{prod.getDescription()}</Card.Text>
+                                    <Card.Text className="card-price">{prod.getPrice()}</Card.Text>
+                                  </div>
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                        ))}
+                      </Row>
+                  ))}
                 </Container>
               </div>
             </div>

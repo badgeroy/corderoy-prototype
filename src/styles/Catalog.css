@@ -1,5 +1,8 @@
+.Catalog .row {
+    margin-bottom: 1rem;
+}
+
 .filter-menu {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

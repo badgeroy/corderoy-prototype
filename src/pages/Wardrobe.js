@@ -6,6 +6,8 @@ import Catalog from "../components/Catalog";
 import LeftArrow from "../images/left-arrow-icon.svg";
 import RightArrow from "../images/right-arrow-icon.svg";
 import {Category} from "../shopbop";
+import OutfitList from "../components/OutfitList";
+import ScrollMenu from "../components/ScrollMenu";
 
 
 class Wardrobe extends React.Component {
@@ -17,48 +19,28 @@ class Wardrobe extends React.Component {
         };
     }
 
-    componentDidMount() {
-        const leftArrow = document.getElementById("left-arrow");
-        const rightArrow = document.getElementById("right-arrow");
-        const navbarNav = document.getElementsByClassName("navbar-nav")[0];
-        const displayArrows = event => {
-          leftArrow.style.visibility = navbarNav.scrollLeft > 0 ?
-              "visible" : "hidden";
-          rightArrow.style.visibility = navbarNav.scrollLeft < navbarNav.scrollWidth - navbarNav.clientWidth ?
-              "visible" : "hidden";
-        }
-        displayArrows();
-        navbarNav.addEventListener("scroll", displayArrows);
-    }
-
     render() {
         return (
           <div className="Wardrobe">
             <BrowserRouter>
-              <Navbar>
+              <Navbar sticky="top">
                 <Container fluid className="navbar-container">
                   <Navbar.Brand href="/">Corderoy</Navbar.Brand>
-                  <div className="navbar-wrapper">
-                    <div className="navbar-arrows" id="left-arrow">
-                      <img src={LeftArrow}/>
-                    </div>
-                    <Nav>
-                      {this.state.categories.map(cat => (
-                          <NavLink className={"nav-" + cat.getId()} as={Link} to={"/" + cat.getId()}>
-                            {cat.getName()}
-                          </NavLink>
-                      ))}
-                    </Nav>
-                    <div className="navbar-arrows" id="right-arrow">
-                      <img src={RightArrow}/>
-                    </div>
-                  </div>
+                  <ScrollMenu className="navbar-menu" width={"70vw"}>
+                    {this.state.categories.map(cat => (
+                        <NavLink className={"nav-" + cat.getId()} as={Link} to={"/" + cat.getId()}>
+                          {cat.getName()}
+                        </NavLink>
+                    ))}
+                  </ScrollMenu>
                 </Container>
               </Navbar>
               <div className="Wardrobe-body">
-                <div className="outfit-list">
-
-                </div>
+                <Nav className="outfit-list-wrapper">
+                  <div className="outfit-list-title">
+                    Your Outfit Selection
+                  </div>
+                </Nav>
                 <Routes>
                   {this.state.categories.map(cat => (
                       <Route path={"/" + cat.getId()} element={<Catalog category={cat}/>}/>
