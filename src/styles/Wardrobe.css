@@ -17,10 +17,12 @@
   flex-direction: row;
   padding: 0 6vw;
   justify-content: center;
+  gap: 5rem;
 }
 
 .outfit-list-wrapper {
   flex-grow: 1;
+  max-width: 35%;
 }
 
 .outfit-list-content {

@@ -1,27 +1,3 @@
-/*.MiniCart .pad {*/
-/*  flex-grow: 1;*/
-/*  width: 40%;*/
-/*}*/
-
-/*.MiniCart .label {*/
-/*  text-align: left;*/
-/*}*/
-
-/*.MiniCart .content {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  justify-content: center;*/
-/*}*/
-
-/*.MiniCart .items {*/
-/*  flex-grow: 1;*/
-/*}*/
-
-/*.MiniCart .card {*/
-/*  background-color: lightgray;*/
-/*  border: none;*/
-/*}*/
-
 .MiniCart {
   display: flex;
   flex-direction: column;
@@ -42,15 +18,35 @@
 }
 
 .MiniCart .price {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .MiniCart .cart-col-left {
-  min-width: 24%;
+  width: 24%;
   text-align: right;
   padding: 1rem;
 }
 
 .MiniCart .cart-col-right {
   flex-grow: 1;
+}
+
+.MiniCart .card {
+  background-color: lightgray;
+  border: none;
+  padding: 0;
+  width: 3.6rem;
+}
+
+.MiniCart .card > img {
+  object-fit: cover;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.MiniCart .row {
+  margin-bottom: 1rem;
 }

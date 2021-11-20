@@ -7,7 +7,7 @@ class Catalog extends React.Component {
         const products = this.props.category.getProducts();
         const colPerRow = 5;
         return (
-            <div className="Catalog">
+            <div className={"Catalog" + (this.props.className ? " " + this.props.className : "")}>
               <div className="cards">
                 <Container fluid>
                   <Row>

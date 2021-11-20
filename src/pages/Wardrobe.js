@@ -41,7 +41,7 @@ class Wardrobe extends React.Component {
                 </Navbar>
                 <div className="Wardrobe-body">
                   <div className="outfit-list-wrapper">
-                    <section className="outfit-list-content" ref={e => this.outfitList = e} style={{border: "solid red"}}>
+                    <section className="outfit-list-content" ref={e => this.outfitList = e}>
                       <h3>Your Outfit Selection</h3>
                       <MiniCart name="CLOTHING"/>
                       <MiniCart name="SHOES"/>
@@ -51,7 +51,7 @@ class Wardrobe extends React.Component {
                   </div>
                   <Routes>
                     {this.state.categories.map(cat => (
-                        <Route path={"/" + cat.getId()} element={<Catalog category={cat}/>}/>
+                        <Route path={"/" + cat.getId()} element={<Catalog className="catalog" category={cat}/>}/>
                     ))}
                   </Routes>
                 </div>
