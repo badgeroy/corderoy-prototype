@@ -1,6 +1,6 @@
 import "../styles/Wardrobe.css";
 import React from "react";
-import {Container, Nav, Navbar, NavLink} from "react-bootstrap";
+import {Button, Card, CardImg, Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Catalog from "../components/Catalog";
 import LeftArrow from "../images/left-arrow-icon.svg";
@@ -8,6 +8,8 @@ import RightArrow from "../images/right-arrow-icon.svg";
 import {Category} from "../shopbop";
 import ScrollMenu from "../components/ScrollMenu";
 import MiniCart from "../components/MiniCart";
+import AddLogo from "../images/crop_free_tight_36px.svg";
+import {CardBody} from "reactstrap";
 
 
 class Wardrobe extends React.Component {
@@ -15,12 +17,41 @@ class Wardrobe extends React.Component {
         super(props);
 
         this.state = {
-            categories: Category.getRootCategories()
+            categories: Category.getRootCategories(),
+            selectedClothing: [],
+            selectedShoes: [],
+            selectedBags: [],
+            selectedAccessories: []
         };
     }
 
     componentDidMount() {
         this.outfitList.style.top = this.navbar.clientHeight.toString() + "px";
+    }
+
+    itemsToCard(items) {
+        const cards = items.map(i => (
+            <Card className="mini-card">
+              <CardImg src={i.getImages()[0]}/>
+            </Card>
+        ));
+        cards.push(
+            <Card className="mini-card">
+              <CardImg src={AddLogo}/>
+            </Card>
+        );
+        return cards;
+    }
+
+    renderMiniCart(name, items) {
+        return (
+            <MiniCart name={name} cols={6} price={
+              items.map(p => p.getPrice())
+                   .reduce((a, b) => a + b, 0)
+            }>
+              {this.itemsToCard(items)}
+            </MiniCart>
+        );
     }
 
     render() {
@@ -43,10 +74,22 @@ class Wardrobe extends React.Component {
                   <div className="outfit-list-wrapper">
                     <section className="outfit-list-content" ref={e => this.outfitList = e}>
                       <h3>Your Outfit Selection</h3>
-                      <MiniCart name="CLOTHING"/>
-                      <MiniCart name="SHOES"/>
-                      <MiniCart name="BAGS"/>
-                      <MiniCart name="ACCESSORIES"/>
+                      {this.renderMiniCart("CLOTHING", this.state.selectedClothing)}
+                      {this.renderMiniCart("SHOES", this.state.selectedShoes)}
+                      {this.renderMiniCart("BAGS", this.state.selectedBags)}
+                      {this.renderMiniCart("ACCESSORIES", this.state.selectedAccessories)}
+                      <MiniCart name="" cols={1} price={
+                        this.state.selectedClothing
+                            .concat(this.state.selectedShoes)
+                            .concat(this.state.selectedBags)
+                            .concat(this.state.selectedAccessories)
+                            .map(p => p.getPrice())
+                            .reduce((a, b) => a + b, 0)
+                      }>
+                        <Button className="submit-outfit">
+                          Proceed to preview
+                        </Button>
+                      </MiniCart>
                     </section>
                   </div>
                   <Routes>

@@ -1,18 +1,18 @@
-.navbar {
+.Wardrobe .navbar {
   padding: 1rem 2rem;
   background-color: white;
 }
 
-.navbar-menu  {
+.Wardrobe .navbar-menu  {
   font-size: 1rem;
 }
 
-.navbar-menu .nav-link {
+.Wardrobe .navbar-menu .nav-link {
   outline: none;
   color: black;
 }
 
-.Wardrobe-body {
+.Wardrobe .Wardrobe-body {
   display: flex;
   flex-direction: row;
   padding: 0 6vw;
@@ -20,12 +20,26 @@
   gap: 5rem;
 }
 
-.outfit-list-wrapper {
+.Wardrobe .outfit-list-wrapper {
   flex-grow: 1;
   max-width: 35%;
 }
 
-.outfit-list-content {
+.Wardrobe .outfit-list-content {
   position: -webkit-sticky;
   position: sticky;
+}
+
+.Wardrobe .mini-card {
+  background-color: lightgray;
+  border: none;
+  padding: 0;
+  width: 3.6rem;
+  cursor: pointer;
+}
+
+.Wardrobe .mini-card > img {
+  object-fit: cover;
+  width: 3.6rem;
+  height: 3.6rem;
 }

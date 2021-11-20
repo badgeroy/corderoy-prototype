@@ -34,19 +34,6 @@
   flex-grow: 1;
 }
 
-.MiniCart .card {
-  background-color: lightgray;
-  border: none;
-  padding: 0;
-  width: 3.6rem;
-}
-
-.MiniCart .card > img {
-  object-fit: cover;
-  width: 3.6rem;
-  height: 3.6rem;
-}
-
 .MiniCart .row {
   margin-bottom: 1rem;
 }

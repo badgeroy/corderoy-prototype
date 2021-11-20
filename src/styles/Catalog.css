@@ -47,6 +47,7 @@
 
 .Catalog .card {
     width: 8rem;
+    cursor: pointer;
 }
 
 .Catalog .card-body {
