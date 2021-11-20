@@ -2,58 +2,58 @@
     margin-bottom: 1rem;
 }
 
-.filter-menu {
+.Catalog .filter-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.sort-input {
+.Catalog .sort-input {
     font-size: 0.75rem;
     width: auto;
 }
 
-.query-group {
+.Catalog .query-group {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.query-group > * {
+.Catalog .query-group > * {
     font-size: 0.75rem;
 }
 
-.query-group > .price-input {
+.Catalog .query-group > .price-input {
     width: 60px;
 }
 
-.min-price-input {
+.Catalog .min-price-input {
     border-radius: 5px 0 0 5px;
     border-right-width: 0;
 }
 
-.max-price-input {
+.Catalog .max-price-input {
     border-radius: 0;
     border-right-width: 0;
 }
 
-.query-input {
+.Catalog .query-input {
     border-radius: 0;
 }
 
-.apply-btn {
+.Catalog .apply-btn {
     border-radius: 0 5px 5px 0;
 }
 
-.card {
+.Catalog .card {
     width: 8rem;
 }
 
-.card-body {
+.Catalog .card-body {
     padding: 4%;
 }
 
-.card-title {
+.Catalog .card-title {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -63,14 +63,14 @@
     margin-bottom: 0;
 }
 
-.card-label {
+.Catalog .card-label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 0.75rem;
 }
 
-.card-desc {
+.Catalog .card-desc {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -79,7 +79,7 @@
     text-align: left;
 }
 
-.card-price {
+.Catalog .card-price {
     text-align: right;
 }
 

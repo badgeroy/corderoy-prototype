@@ -1,5 +1,7 @@
 import "../styles/MiniCart.css"
 import React from "react";
+import {Card, CardImg} from "react-bootstrap";
+import AddLogo from "../images/add_36px_outlined.svg"
 
 
 class MiniCart extends React.Component {
@@ -22,9 +24,17 @@ class MiniCart extends React.Component {
     render() {
         return (
             <div className="MiniCart">
-              <div className="label">
-                <div className="label-title">{this.props.name}</div>
-                <div className="label-price">{this.getTotalPrice()}</div>
+              <div className="header cart-row">
+                <div className="pad cart-col-left" />
+                <div className="label cart-col-right">{this.props.name}</div>
+              </div>
+              <div className="content cart-row">
+                <div className="price cart-col-left">{this.getTotalPrice()}</div>
+                <div className="items cart-col-right">
+                  <Card style={{width: "3.6rem"}}>
+                    <CardImg src={AddLogo}/>
+                  </Card>
+                </div>
               </div>
             </div>
         );
