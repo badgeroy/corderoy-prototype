@@ -1,6 +1,7 @@
 import "../styles/Catalog.css"
 import React from "react";
 import {Card, Col, Container, Row, Form, Button} from "react-bootstrap";
+import CatalogCard from "./CatalogCard";
 
 class Catalog extends React.Component {
     render() {
@@ -39,16 +40,7 @@ class Catalog extends React.Component {
                       <Row className="no-gutters" key={idx} xs={colPerRow}>
                         {row.map(prod => (
                             <Col>
-                              <Card style={{marginRight: 0}}>
-                                <Card.Img variant="top" src={"https://m.media-amazon.com/images/G/01/Shopbop/p" + prod.getMainImage()} />
-                                <Card.Body>
-                                  <Card.Title>{prod.getDesigner()}</Card.Title>
-                                  <div className="card-label">
-                                    <Card.Text className="card-desc">{prod.getDescription()}</Card.Text>
-                                    <Card.Text className="card-price">{prod.getPrice()}</Card.Text>
-                                  </div>
-                                </Card.Body>
-                              </Card>
+                              <CatalogCard prod={prod}/>
                             </Col>
                         ))}
                       </Row>

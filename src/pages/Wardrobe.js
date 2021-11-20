@@ -1,6 +1,6 @@
 import "../styles/Wardrobe.css";
 import React from "react";
-import {Button, Card, CardImg, Container, Nav, Navbar, NavLink} from "react-bootstrap";
+import {Button, Card, Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Catalog from "../components/Catalog";
 import LeftArrow from "../images/left-arrow-icon.svg";
@@ -10,6 +10,7 @@ import ScrollMenu from "../components/ScrollMenu";
 import MiniCart from "../components/MiniCart";
 import AddLogo from "../images/crop_free_tight_36px.svg";
 import {CardBody} from "reactstrap";
+
 
 
 class Wardrobe extends React.Component {
@@ -32,12 +33,12 @@ class Wardrobe extends React.Component {
     itemsToCard(items) {
         const cards = items.map(i => (
             <Card className="mini-card">
-              <CardImg src={i.getImages()[0]}/>
+              <Card.Img src={i.getImages()[0]}/>
             </Card>
         ));
         cards.push(
             <Card className="mini-card">
-              <CardImg src={AddLogo}/>
+              <Card.Img src={AddLogo}/>
             </Card>
         );
         return cards;

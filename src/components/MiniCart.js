@@ -1,7 +1,6 @@
 import "../styles/MiniCart.css"
 import React from "react";
-import {Card, CardImg, Col, Container, Row} from "react-bootstrap";
-import AddLogo from "../images/crop_free_tight_36px.svg"
+import {Col, Row} from "react-bootstrap";
 
 
 class MiniCart extends React.Component {
