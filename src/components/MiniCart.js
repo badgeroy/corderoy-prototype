@@ -1,7 +1,7 @@
 import "../styles/MiniCart.css"
 import React from "react";
 import {Card, CardImg, Col, Container, Row} from "react-bootstrap";
-import AddLogo from "../images/add_36px_outlined.svg"
+import AddLogo from "../images/crop_free_tight_36px.svg"
 
 
 class MiniCart extends React.Component {
@@ -32,7 +32,7 @@ class MiniCart extends React.Component {
         ));
         items.push(
             <Card>
-              <CardImg src="https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/kvarg/kvarg300381c2c3/kvarg300381c2c3_1636053070153_2-0.jpg"/>
+              <CardImg src={AddLogo}/>
             </Card>
         );
         return (
