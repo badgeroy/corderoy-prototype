@@ -4,6 +4,10 @@ import {Card, Col, Container, Row, Form, Button} from "react-bootstrap";
 import CatalogCard from "./CatalogCard";
 
 class Catalog extends React.Component {
+    previewItem(prod, rowIdx, colIdx) {
+        console.log(rowIdx + ", " + colIdx + " " + prod)
+    }
+
     render() {
         const products = this.props.category.getProducts();
         const colPerRow = 5;
@@ -36,11 +40,11 @@ class Catalog extends React.Component {
                       const start = idx * colPerRow;
                       const end = start + colPerRow;
                       return products.slice(start, end);
-                  }).map((row, idx) => (
-                      <Row className="no-gutters" key={idx} xs={colPerRow}>
-                        {row.map(prod => (
+                  }).map((row, rowIdx) => (
+                      <Row className="no-gutters" key={rowIdx} xs={colPerRow}>
+                        {row.map((prod, colIdx) => (
                             <Col>
-                              <CatalogCard prod={prod}/>
+                              <CatalogCard prod={prod} onClick={() => this.previewItem(prod, rowIdx, colIdx)}/>
                             </Col>
                         ))}
                       </Row>

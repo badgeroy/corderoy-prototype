@@ -15,7 +15,7 @@ class CatalogCard extends React.Component {
         const imgBaseURL = "https://m.media-amazon.com/images/G/01/Shopbop/p";
         return (
             <div className="CatalogCard">
-              <Card>
+              <Card onClick={this.props.onClick}>
                 <Card.Img
                     variant="top"
                     src={imgBaseURL + this.props.prod.getColors()[this.state.color].getImages()[0]}
