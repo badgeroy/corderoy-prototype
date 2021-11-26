@@ -4,13 +4,45 @@ import {Card, Col, Container, Row, Form, Button} from "react-bootstrap";
 import CatalogCard from "./CatalogCard";
 
 class Catalog extends React.Component {
-    previewItem(prod, rowIdx, colIdx) {
-        console.log(rowIdx + ", " + colIdx + " " + prod)
+    constructor(props) {
+        super(props);
+        const products = this.props.category.getProducts();
+        const colPerRow = 5;
+        this.state = {
+            products: products,
+            colPerRow: colPerRow,
+            rows: [...Array(Math.ceil(products.length / colPerRow))].map((row, idx) => {
+                      const start = idx * colPerRow;
+                      const end = start + colPerRow;
+                      return products.slice(start, end);
+                    }).map((row, rowIdx) => (
+                        <Row className="no-gutters" key={rowIdx} xs={colPerRow}>
+                          {row.map((prod, colIdx) => (
+                              <Col>
+                                <CatalogCard prod={prod} onClick={() => this.renderItemExpand(prod, rowIdx, colIdx)}/>
+                              </Col>
+                          ))}
+                        </Row>
+                    ))
+        };
+        this.renderItemExpand = this.renderItemExpand.bind(this);
+    }
+
+    renderItemExpand(prod, rowIdx, colIdx) {
+        // this.setState({rows: [
+        //     ...this.state.rows.slice(0, rowIdx + 1),
+        //     (<Row>
+        //       <Container fluid>
+        //         Hi there
+        //       </Container>
+        //     </Row>),
+        //     ...this.state.rows.slice(rowIdx + 1)
+        // ]})
+
     }
 
     render() {
-        const products = this.props.category.getProducts();
-        const colPerRow = 5;
+        console.log(this.state.rows);
         return (
             <div className={"Catalog" + (this.props.className ? " " + this.props.className : "")}>
               <div className="cards">
@@ -36,19 +68,7 @@ class Catalog extends React.Component {
                       </Form.Group>
                     </Form>
                   </Row>
-                  {[...Array(Math.ceil(products.length / colPerRow))].map((row, idx) => {
-                      const start = idx * colPerRow;
-                      const end = start + colPerRow;
-                      return products.slice(start, end);
-                  }).map((row, rowIdx) => (
-                      <Row className="no-gutters" key={rowIdx} xs={colPerRow}>
-                        {row.map((prod, colIdx) => (
-                            <Col>
-                              <CatalogCard prod={prod} onClick={() => this.previewItem(prod, rowIdx, colIdx)}/>
-                            </Col>
-                        ))}
-                      </Row>
-                  ))}
+                  {this.state.rows}
                 </Container>
               </div>
             </div>

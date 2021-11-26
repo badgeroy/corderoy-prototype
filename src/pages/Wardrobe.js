@@ -3,14 +3,10 @@ import React from "react";
 import {Button, Card, Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Catalog from "../components/Catalog";
-import LeftArrow from "../images/left-arrow-icon.svg";
-import RightArrow from "../images/right-arrow-icon.svg";
 import {Category} from "../shopbop";
 import ScrollMenu from "../components/ScrollMenu";
 import MiniCart from "../components/MiniCart";
-import AddLogo from "../images/crop_free_tight_36px.svg";
-import {CardBody} from "reactstrap";
-
+import CropLogo from "../images/crop_free_tight_36px.svg";
 
 
 class Wardrobe extends React.Component {
@@ -18,12 +14,16 @@ class Wardrobe extends React.Component {
         super(props);
 
         this.state = {
-            categories: Category.getRootCategories(),
+            categories: Category.getRootCategories().map(root => root.getChildren()).flat(),
             selectedClothing: [],
             selectedShoes: [],
             selectedBags: [],
             selectedAccessories: []
         };
+
+        for (const cat of this.state.categories) {
+            console.log(cat.getParent());
+        }
     }
 
     componentDidMount() {
@@ -38,7 +38,7 @@ class Wardrobe extends React.Component {
         ));
         cards.push(
             <Card className="mini-card">
-              <Card.Img src={AddLogo}/>
+              <Card.Img src={CropLogo}/>
             </Card>
         );
         return cards;
@@ -95,7 +95,9 @@ class Wardrobe extends React.Component {
                   </div>
                   <Routes>
                     {this.state.categories.map(cat => (
-                        <Route path={"/" + cat.getId()} element={<Catalog className="catalog" category={cat}/>}/>
+                        <Route path={"/" + cat.getId()} element={
+                          <Catalog className="catalog" category={cat}/>
+                        }/>
                     ))}
                   </Routes>
                 </div>

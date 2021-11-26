@@ -33,12 +33,13 @@ export class Product {
         }
     }
 
-    constructor(name, desc, price, storePage, colors) {
+    constructor(name, desc, price, storePage, colors, category) {
         this.designer = name;
         this.desc = desc;
         this.price = price;
         this.storePage = storePage;
         this.colors = colors;
+        this.category = category;
     }
 
     /**
@@ -82,6 +83,13 @@ export class Product {
     getColors() {
         return this.colors;
     }
+
+    /**
+     * @returns {Category} the category this product belongs to
+     */
+    getCategory() {
+        return this.category;
+    }
 }
 
 export class Category {
@@ -95,26 +103,20 @@ export class Category {
      * @returns {Category[]} an array of categories as returned from the Shopbop API
      */
     static getRootCategories = function() {
-        const rootCats = []
-        for (const subcat of categories.whatsNewCategory.children) {
-            if (!subcat.children)
-                continue;
-            for (const subsubcat of subcat.children) {
-                const id = subsubcat.id;
-                const name = subsubcat.name;
-                rootCats.push(new Category(id, name));
-            }
+        const rootNames = ["Clothing", "Shoes", "Bags", "Jewelry & Accessories"];
+        const roots = [];
+        for (const cat of categories.categories) {
+            if (rootNames.indexOf(cat.name) > -1)
+                roots.push(new Category(cat.id, cat.name, null, cat.children));
         }
-        return rootCats;
+        return roots;
     }
 
-    constructor(id, name) {
+    constructor(id, name, parent, children) {
         this.id = id;
         this.name = name;
-    }
-
-    getClothing() {
-        return "winterwear"
+        this.parent = parent;
+        this.children = children;
     }
 
     /**
@@ -128,7 +130,14 @@ export class Category {
      * @returns {String} the name of this category
      */
     getName() {
-        return this.name
+        return this.name;
+    }
+
+    /**
+     * @returns {Category} the parent category of this category if any, null otherwise
+     */
+    getParent() {
+        return this.parent;
     }
 
     /**
@@ -136,7 +145,7 @@ export class Category {
      *          an empty array otherwise
      */
     getChildren() {
-
+        return this.children.map(c => new Category(c.id, c.name, this, c.children));
     }
 
     /**

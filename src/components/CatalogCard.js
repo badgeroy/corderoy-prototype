@@ -7,15 +7,27 @@ class CatalogCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: 0
+            color: 0,
+            clicked: false
         }
+        this.setColor = this.setColor.bind(this);
+        this.onClick = this.onClick.bind(this);
+    }
+
+    setColor(color) {
+        this.setState({color: color});
+    }
+
+    onClick(cb) {
+        this.setState({clicked: !this.state.clicked});
+        cb();
     }
 
     render() {
         const imgBaseURL = "https://m.media-amazon.com/images/G/01/Shopbop/p";
         return (
             <div className="CatalogCard">
-              <Card onClick={this.props.onClick}>
+              <Card onClick={() => this.onClick(this.props.onClick)}>
                 <Card.Img
                     variant="top"
                     src={imgBaseURL + this.props.prod.getColors()[this.state.color].getImages()[0]}
